@@ -1,0 +1,59 @@
+PERSONNES
+le dirigeant / le président / chef d'état / roi / tyran / dictateur (Possible)
+
+LANGUE
+la langue nationale / les langues (Ouai)
+
+MONNAIE
+la monnaie (Ouai)
+
+RELIGION
+religions (Possible)
+
+SURFACE
+la superficie (Ouai)
+
+DATES CLES
+creation pays (Possible)
+emancipation (Possible)
+constitution (Possible)
+
+NOM ET AUTRE
+les richesses / ressources naturelles (Possible)
+situation géopolitique  (Possible)
+drapeau (Possible)
+
+PAYS
+pays frontaliers (Ouai)
+
+REGIONS
+les régions (Possible)
+
+TAUX
+% religions (Possible)
+énergie principale nucléaire - charbon - gaz (Possible)
+
+REGIME
+le type de gouvernement / le type de régime (Ouai)
+le parti dirigeant / l'orientation du pays / le nombre de partis politiques (Possible)
+
+BOOL
+le dirigeant / le président / chef d'état / roi / tyran / dictateur (Ouai)
+en bord de mer (Possible)
+énergie principale nucléaire - charbon - gaz (Possible)
+
+
+NOMBRE DE - VALEUR
+régions (Possible)
+le nombre d'habitant (ouai)
+nombre de région (Possible)
+pib (Possible)
+relief / hauteur montagne (Possible)
+nrb montagnes (Possible)
+nbr lac (Possible ex: canada)
+
+COORDONNEES GPS
+coordonnées (Possible)
+
+CONTINENT
+continent (Ouai)
