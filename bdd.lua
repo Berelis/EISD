@@ -1,6 +1,7 @@
 pays={
 	france  = {
 		langue = {"français"},
+		capitale = "paris",
 		monnaie = "euro",
 		religion ={""},
 		position = {"Europe de l'Ouest"},
@@ -14,6 +15,7 @@ pays={
 	}
 	hyrule  = {
 		langue = {"hylien"},
+		capitale = "chateau d'hyrule"
 		monnaie = "rubis",
 		religion ={"polythéiste"},
 		position = {"DTC"},
@@ -27,14 +29,15 @@ pays={
 	}
 
 	twitch  = {
-		langue = {"Kappa"},
+		langue = {"Kappa", "TriHex", "ResidentSleeper", "PogChamp", "Kreygasm", "OpieOP"},
+		capitale = "Cosmo"
 		monnaie = "FrankerZ",
 		religion ={"Helix Fossil"},
 		position = {"4chan"},
 		pays_frontalier = {"reddit", "facebook", "twitter", "youporn", "redtube"},
 		population = "Over 9000",
 		regime = "Anarchy",
-		continent = "Cosmo",
+		continent = "Internet",
 		superficie = "1 8 1 0 ",
 		
 
