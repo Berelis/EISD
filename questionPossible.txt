@@ -1,45 +1,45 @@
 PERSONNES
-le dirigeant / le président / chef d'état / roi / tyran / dictateur (Possible)
+le dirigeant / le président / chef d'état / roi / tyran / dictateur (Possible) X
 
 LANGUE
-la langue nationale / les langues (Ouai)
+la langue nationale / les langues (Ouai) V
 
 MONNAIE
-la monnaie (Ouai)
+la monnaie (Ouai) V
 
 RELIGION
-religions (Possible)
+religions (Possible) V
 
 SURFACE
-la superficie (Ouai)
+la superficie (Ouai) V
 
-DATES CLES
-creation pays (Possible)
-emancipation (Possible)
-constitution (Possible)
+DATES CLES X
+creation pays (Possible) x
+emancipation (Possible) X 
+constitution (Possible) x
 
 NOM ET AUTRE
 les richesses / ressources naturelles (Possible)
-situation géopolitique  (Possible)
+situation géopolitique  (Possible) 
 drapeau (Possible)
 
 PAYS
-pays frontaliers (Ouai)
+pays frontaliers (Ouai) V
 
 REGIONS
-les régions (Possible)
+les régions (Possible) X
 
 TAUX
 % religions (Possible)
 énergie principale nucléaire - charbon - gaz (Possible)
 
 REGIME
-le type de gouvernement / le type de régime (Ouai)
-le parti dirigeant / l'orientation du pays / le nombre de partis politiques (Possible)
+le type de gouvernement / le type de régime (Ouai) V
+le parti dirigeant / l'orientation du pays / le nombre de partis politiques (Possible) X
 
 BOOL
-le dirigeant / le président / chef d'état / roi / tyran / dictateur (Ouai)
-en bord de mer (Possible)
+le dirigeant / le président / chef d'état / roi / tyran / dictateur (Ouai) X
+en bord de mer (Possible) 
 énergie principale nucléaire - charbon - gaz (Possible)
 
 
@@ -47,9 +47,9 @@ NOMBRE DE - VALEUR
 régions (Possible)
 le nombre d'habitant (ouai)
 nombre de région (Possible)
-pib (Possible)
+pib (Possible) X
 relief / hauteur montagne (Possible)
-nrb montagnes (Possible)
+nrb montagnes (Possible) 
 nbr lac (Possible ex: canada)
 
 COORDONNEES GPS
