@@ -15,7 +15,8 @@ main:add(position)
 local tag = {
 	pays = "green",
 	continent = "red",
-	frontalier = "blue"
+	frontalier = "blue",
+	est_frontalier = "yellow"
 }
 
 for line in io.lines() do
