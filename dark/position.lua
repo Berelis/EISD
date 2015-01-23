@@ -21,7 +21,7 @@ position:pattern([[
 ]])
 
 position:pattern([[
-	[&frontalier ( /entouré/ | /bordé/ | /frontalier/ | (/frontière/ /commune/?))  (&CON? &cardinaux? (/avec/ | /par/)? &DET? &pays &cardinaux? &PCT?)+
+	[&frontalier ( /entouré/ | /bordé/ | /frontalier/ | (/frontière/ .?)) &PCT? (&CON? &cardinaux? (/avec/ | /par/)? &DET? &pays &cardinaux? &PCT?)+
 	]
 ]])
 
