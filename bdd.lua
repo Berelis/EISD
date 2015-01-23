@@ -4,12 +4,12 @@ pays={
 		capitale = "paris",
 		monnaie = "euro",
 		religion ={""},
+		regime = "république constitutionnelle",
+		population = "66,6 millions",
+		superficie = "Over 9000",
+		continent = "Europe",
 		position = {"Europe de l'Ouest"},
 		pays_frontalier = {"belgique", "espagne", "allemagne", "suisse", "italie", "luxembourg", "andorre", "monaco", "liechtenstein"},
-		population = "66,6 millions",
-		regime = "république constitutionnelle",
-		continent = "Europe",
-		superficie = "Over 9000",
 		
 
 	}
