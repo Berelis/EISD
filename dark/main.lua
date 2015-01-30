@@ -55,6 +55,25 @@ function get_tags2(seq, tag, tagIn)
 	return res
 end
 
+bdd = {}
+
+
+modele  = {
+		langue = {},
+		monnaie = "",
+		religion ={},
+		position = {},
+		pays_frontalier = {},
+		population = "",
+		regime = "",
+		continent = "",
+		superficie = "",
+		
+
+	}
+
+local nomPays = ""
+
 for line in io.lines() do
 	local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
 	-- print(serialize(seq["&frontalier"]))
@@ -78,6 +97,22 @@ for line in io.lines() do
 	-- if #seq > 6 then
 	-- 	print(get_tokens(seq, 3, 6))
 	-- end
+		print(serialize(get_tags(seq, "&pays")))
+	if nomPays == "" then
+		local res = get_tags(seq, "&pays")
+		nomPays = res[1]
+		print("pays " .. nomPays)
+		bdd[nomPays] = modele
+
+	end
+
+	local res = get_tags(seq, "&continent")
+	if(#res ~= 0) then
+		bdd[nomPays]["continent"] = res[1]
+	end
+
+	print("affichage bdd")
+ 	print(serialize(bdd))
 	--seq:dump()
 	--print(seq:tostring(tag))
 end
