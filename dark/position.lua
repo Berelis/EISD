@@ -25,8 +25,8 @@ position:pattern([[
 	]
 ]])
 
-position:pattern([[
-	[&est_frontalier
-		&pays .* &frontalier
-	]
-]])
+--position:pattern([[
+--	[&est_frontalier
+--		&pays .* &frontalier
+--	]
+--]])
