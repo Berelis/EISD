@@ -35,12 +35,49 @@ function get_tags(seq, tag)
 	return res
 end
 
+function get_tokens2(seq, debut, fin, tagIn)
+	local tab = {}
+	for i = debut, fin do
+		for j=1,#seq[i] do
+			if seq[i][j].name == tagIn then
+				tab[#tab + 1] = seq[i].token
+			end
+		end
+	end
+	return tab
+end
+
+function get_tags2(seq, tag, tagIn)
+	local res = {}
+	for idx, pos in ipairs(seq[tag]) do
+		res[#res + 1] = get_tokens2(seq, pos[1], pos[2], tagIn)
+	end
+	return res
+end
+
 for line in io.lines() do
 	local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
-	print(serialize(get_tags(seq, "&pays")))
-	if #seq > 6 then
-		print(get_tokens(seq, 3, 6))
-	end
+	-- print(serialize(seq["&frontalier"]))
+	-- print(seq["&pays"])
+	-- print(serialize(seq[146]))
+	-- print(serialize(seq[170]))
+	elf = get_tags2(seq, "&frontalier", "&pays")
+	print(elf)
+	 if elf[1] ~= nil then 
+	 	pays = elf[1]
+	 	print(serialize(elf))
+
+	 	print(serialize(pays))
+	 	-- print("pays = " .. pays)
+	 	-- print("1er = " .. pays[1])
+	 	-- print(serialize(elf))
+	 	-- print(serialize(seq))
+	 	-- print(serialize(elf))
+	 	-- print(serialize(get_tags(elf[1],"&pays")))
+	 end
+	-- if #seq > 6 then
+	-- 	print(get_tokens(seq, 3, 6))
+	-- end
 	--seq:dump()
-	print(seq:tostring(tag))
+	--print(seq:tostring(tag))
 end
