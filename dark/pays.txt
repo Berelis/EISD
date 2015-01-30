@@ -1,0 +1,200 @@
+afghanistan
+afrique du sud
+albanie
+algérie
+allemagne
+andorre
+angola
+antigua-et-barbuda
+arabie saoudite
+argentine
+arménie
+australie
+autriche
+azerbaïdjan
+bahamas
+bahreïn
+bangladesh
+barbade
+belgique
+belize
+bénin
+bhoutan
+belarus
+birmanie
+bolivie
+bosnie-herzégovine
+botswana
+brésil
+brunei
+bulgarie
+burkina
+burundi
+cambodge
+cameroun
+canada
+cap-vert
+république centrafricaine
+chili
+république populaire de chine
+chine
+chypre
+colombie
+comores
+république du congo
+république démocratique du congo
+Îles cook
+corée du nord
+corée du sud
+costa rica
+côte d'ivoire
+croatie
+cuba
+danemark
+djibouti
+république dominicaine
+dominique
+Égypte
+Émirats arabes unis
+Équateur
+Érythrée
+espagne
+estonie
+États-unis
+Éthiopie
+fidji
+finlande
+france
+gabon
+gambie
+géorgie
+ghana
+grèce
+grenade
+guatemala
+guinée
+guinée-bissau
+guinée équatoriale
+guyana
+haïti
+honduras
+hongrie
+inde
+indonésie
+irak
+iran
+irlande
+islande
+israël
+italie
+jamaïque
+japon
+jordanie
+kazakhstan
+kenya
+kirghizie
+kiribati
+kosovo
+koweït
+laos
+lesotho
+lettonie
+liban
+liberia
+libye
+liechtenstein
+lituanie
+luxembourg
+ancienne république yougoslave de macédoine
+macédoine
+madagascar
+malaisie
+malawi
+maldives
+mali
+malte
+maroc
+Îles marshall
+maurice
+mauritanie
+mexique
+micronésie
+moldavie
+monaco
+mongolie
+monténégro
+mozambique
+namibie
+nauru
+népal
+nicaragua
+niger
+nigéria
+niue
+norvège
+nouvelle-zélande
+oman
+ouganda
+ouzbékistan
+pakistan
+palaos
+État de palestine
+panama
+papouasie-nouvelle-guinée
+paraguay
+pays-bas
+pérou
+philippines
+pologne
+portugal
+qatar
+roumanie
+royaume-uni
+russie
+rwanda
+saint-christophe-et-niévès
+sainte-lucie
+saint-marin
+saint-vincent-et-les grenadines
+Îles salomon
+salvador
+samoa
+sao tomé-et-principe
+sénégal
+serbie
+seychelles
+sierra leone
+singapour
+slovaquie
+slovénie
+somalie
+soudan
+soudan du sud
+sri lanka
+suède
+suisse
+suriname
+swaziland
+syrie
+tadjikistan
+tanzanie
+tchad
+république tchèque
+thaïlande
+timor oriental
+togo
+tonga
+trinité-et-tobago
+tunisie
+turkménistan
+turquie
+tuvalu
+ukraine
+uruguay
+vanuatu
+vatican
+venezuela
+viêt nam
+yémen
+zambie
+zimbabwe
