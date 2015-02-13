@@ -1,4 +1,6 @@
 require('position')
+--récupération de la base de donnée actuelle
+dofile("../bdd.lua")
 
 local name = dark.pipeline()
 --chargement de la liste des prénom
@@ -55,64 +57,55 @@ function get_tags2(seq, tag, tagIn)
 	return res
 end
 
-bdd = {}
-
-
 modele  = {
-		langue = {},
-		monnaie = "",
-		religion ={},
-		position = {},
-		pays_frontalier = {},
-		population = "",
-		regime = "",
-		continent = "",
-		superficie = "",
-		
+	langue = {},
+	capitale = "",
+	monnaie = "",
+	religion ={},
+	position = {},
+	pays_frontalier = {},
+	population = "",
+	regime = "",
+	continent = "",
+	superficie = "",
+}
 
-	}
-
-local nomPays = ""
+local nomPays = nil
 
 for line in io.lines() do
 	local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
-	-- print(serialize(seq["&frontalier"]))
-	-- print(seq["&pays"])
-	-- print(serialize(seq[146]))
-	-- print(serialize(seq[170]))
-	elf = get_tags2(seq, "&frontalier", "&pays")
-	print(elf)
-	 if elf[1] ~= nil then 
-	 	pays = elf[1]
-	 	print(serialize(elf))
+	local seq = main(line:lower():gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
 
-	 	print(serialize(pays))
-	 	-- print("pays = " .. pays)
-	 	-- print("1er = " .. pays[1])
-	 	-- print(serialize(elf))
-	 	-- print(serialize(seq))
-	 	-- print(serialize(elf))
-	 	-- print(serialize(get_tags(elf[1],"&pays")))
-	 end
-	-- if #seq > 6 then
-	-- 	print(get_tokens(seq, 3, 6))
-	-- end
-		print(serialize(get_tags(seq, "&pays")))
-	if nomPays == "" then
-		local res = get_tags(seq, "&pays")
-		nomPays = res[1]
-		print("pays " .. nomPays)
-		bdd[nomPays] = modele
-
+	if nomPays == nil then
+		nomPays = get_tags(seq, "&pays")[1]
+		if nomPays ~= nil and bdd[nomPays] == nil then
+			print("Pays " .. nomPays)
+			bdd[nomPays] = modele
+		end
+	else
+		local tmp = get_tags2(seq, "&frontalier", "&pays")
+		if tmp[1] ~= nil then 
+			bdd[nomPays].pays_frontalier = tmp[1]
+		end
+		tmp = get_tags(seq, "&continent")
+		if tmp[1] ~= nil then 
+			bdd[nomPays].continent = tmp[1]
+		end
 	end
-
-	local res = get_tags(seq, "&continent")
-	if(#res ~= 0) then
-		bdd[nomPays]["continent"] = res[1]
-	end
-
-	print("affichage bdd")
- 	print(serialize(bdd))
-	--seq:dump()
+	seq:dump()
 	--print(seq:tostring(tag))
 end
+
+print("affichage bdd")
+print(serialize(bdd))
+if bdd["France"] == nil then
+	print("Y a pas la France")
+else
+	print("Y a la France")
+end
+if bdd["Afghanistan"] == nil then
+	print("Y a pas Afghanistan")
+else
+	print("Y a Afghanistan")
+end
+io.open("../bdd.lua","w"):write("bdd = " .. serialize(bdd))
