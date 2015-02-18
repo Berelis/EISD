@@ -1,6 +1,9 @@
 require('position')
+
 --récupération de la base de donnée actuelle
 dofile("../bdd.lua")
+require('langue')
+
 
 local name = dark.pipeline()
 --chargement de la liste des prénom
@@ -13,6 +16,7 @@ main:model("model/postag-fr")
 --ajout des pattern créés précédemments
 main:add(name)
 main:add(position)
+main:add(langue)
 
 local tag = {
 	pays = "green",
