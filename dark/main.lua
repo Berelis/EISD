@@ -1,8 +1,11 @@
-require('position')
-
 --récupération de la base de donnée actuelle
 dofile("../bdd.lua")
+
+--Appel des fichiers extérieurs
+require('position')
 require('langue')
+require('monnaie')
+
 
 
 local name = dark.pipeline()
@@ -17,13 +20,21 @@ main:model("model/postag-fr")
 main:add(name)
 main:add(position)
 main:add(langue)
+main:add(monnaie)
 
 local tag = {
 	pays = "green",
 	continent = "red",
 	frontalier = "blue",
-	est_frontalier = "yellow"
+	est_frontalier = "yellow",
+	monnaie = "black",
+	zone_euro = "black",
+	est_monnaie = "black",
+	devises = "black",
+	monnaie_complet = "blue"
+
 }
+
 
 function get_tokens(seq, debut, fin)
 	local tab = {}
@@ -33,12 +44,39 @@ function get_tokens(seq, debut, fin)
 	return table.concat(tab, " ")
 end
 
+
+
 function get_tags(seq, tag)
 	local res = {}
 	for idx, pos in ipairs(seq[tag]) do
 		res[#res + 1] = get_tokens(seq, pos[1], pos[2])
 	end
 	return res
+end
+
+--Meme fonction que précedement mais renvoie un tableau au lieu de concatener les tokens
+function get_tokensTab(seq, debut, fin)
+	local tab = {}
+	for i = debut, fin do
+		tab[#tab + 1] = seq[i].token
+	end
+	return tab
+end
+
+function get_tagsTab(seq, tag)
+	local res = {}
+	for idx, pos in ipairs(seq[tag]) do
+		res[#res + 1] = get_tokensTab(seq, pos[1], pos[2])
+	end
+	return res
+end
+
+function ConcatSousTab(tab, debut, fin)
+	local res = {}
+	for i=debut, fin,1 do
+		res[#res+1] = tab[i]
+	end
+	return table.concat(res, " ")
 end
 
 function get_tokens2(seq, debut, fin, tagIn)
@@ -63,7 +101,7 @@ end
 
 modele  = {
 	langue = {},
-	capitale = "",
+	capitale = {},
 	monnaie = "",
 	religion ={},
 	position = {},
@@ -91,17 +129,44 @@ for line in io.lines() do
 		if tmp[1] ~= nil then 
 			bdd[nomPays].pays_frontalier = tmp[1]
 		end
+
 		tmp = get_tags(seq, "&continent")
 		if tmp[1] ~= nil then 
 			bdd[nomPays].continent = tmp[1]
 		end
+
+		--Extraction monnaie
+		if bdd[nomPays].monnaie == "" then
+			tmp = get_tags(seq, "&zone_euro")
+			if tmp[1] ~= nil then
+				print("coucou1")
+				bdd[nomPays].monnaie = "euro"
+			else
+				tmp = get_tags(seq, "&monnaie_complet")
+				if tmp[1] ~= nil then
+					print("coucou2")
+					print(tmp[1])
+					bdd[nomPays].monnaie = tmp[1]
+				else
+					tmp = get_tagsTab(seq, "&est_monnaie")
+					if tmp[1] ~= nil then
+						print("coucou3")
+						local res = ConcatSousTab(tmp[1], #tmp[1] , #tmp[1])
+						print(res)
+						bdd[nomPays].monnaie = res
+					end
+				end
+			end
+		end
+
+
 	end
-	seq:dump()
-	--print(seq:tostring(tag))
+	--seq:dump()
+	print(seq:tostring(tag))
 end
 
 print("affichage bdd")
-print(serialize(bdd))
+--print(serialize(bdd))
 if bdd["France"] == nil then
 	print("Y a pas la France")
 else
