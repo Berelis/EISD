@@ -1,8 +1,8 @@
-CC     =gcc
+CC     =cc
 CFLAGS =-std=c99 -W -Wall -O3
-LIBS   =-lm -llua5.2 -ldl
-INCDIR =-I/usr/include/lua5.2
-LIBDIR =-L/usr/lo/lua5.2
+LIBS   =-lm -llua -ldl
+INCDIR =-I/usr/local/include
+LIBDIR =-L/usr/local/lib
 
 DESTDIR=
 PREFIX =/usr/local

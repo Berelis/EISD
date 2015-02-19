@@ -265,25 +265,26 @@ end
 
 -- Trouver la reponse a un sujet et un context
 function get_reponse(i,question)
-	print(serialize(question.sujet))
-	print(i)
-
-	question.reponse[i] = {}
 
 	--Trouver la reponse
 	if bdd[question.contexte] ~= nil and
 	bdd[question.contexte][question.sujet[i]] ~= nil then
 		question.reponse[#question.reponse + 1] = bdd[question.contexte][question.sujet[i]]
 
-		-- Si Reponse vide
-		if #question.reponse[i][1] ~= nil and #question.reponse[i] == 0 then
+		-- Si Reponse vide reponse = "" ou reponse {}
+		if #question.reponse[i] == 0 then 
 			print("Nous n'avons pas la reponse a cette question.")
 		-- Sinon
-		else			
-			if #question.reponse[i] == 1 then
-				print("La reponse a votre question est : " .. question.reponse[i][1])
+		else	
+			-- Si la reponse n'est pas un tableau
+			if question.reponse[i][1] == nil then
+				print("La reponse a votre question (" .. i .. ") est : " .. question.reponse[i])
+			-- Si la reponse est un tableau de taille un
+			elseif #question.reponse[i] == 1 then
+				print("La reponse a votre question (" .. i .. ") est : " .. question.reponse[i][1])
+			-- Si la reponse est un tableau de taille > 1
 			else
-				print("Les reponses a votre question sont :")
+				print("Les reponses a votre question (" .. i .. ") sont :")
 				for j = 1, #question.reponse[i] do
 					print(question.reponse[i][j])
 				end
@@ -298,10 +299,14 @@ local listequestions = {}
 local questionnumber = 1
 local answer = nil
 
-repeat
+while true do
 	--Recuperer la reponse
 	print("\nQuelle question voulez-vous nous poser (q pour quitter) ?\n")
 	local answer=io.read()
+
+	if answer == "q" then
+		break
+	end
 
 	local question = {
 		texte = answer
@@ -336,18 +341,44 @@ repeat
 	--Trouver sujet question
 	local res = get_tags(seq, "&pays")
 
-	if res[1] ~= nil then
+	-- Si la question porte sur un ou des pays
+	if #res ~= 0 then
 		-- Si la question porte sur un pays
-		print("Le contexte de votre question est : " .. res[1])
-		question.contexte = res[1]
+		if #res == 1 then
+			print("Le contexte de votre question est : " .. res[1])
+			question.contexte = res[1]
+		-- Si la question porte sur plusieurs pays
+		else
+			print("Les contextes de votre question sont : ")
+			question.contexte = {}
+			for K , V in pairs(res) do
+				question.contexte[#question.contexte + 1] = V
+				print("--> (" .. K .. ") ".. question.contexte[#question.contexte])
+			end
+		end
+	-- Sinon on regarde ceux de la question precedente, si il y en a une, si ce n'est pas nul on en fait egalement le contexte de la nouvelle question
 	elseif listequestions[questionnumber-1] ~= nil and
 	listequestions[questionnumber-1].contexte ~= nil then
-		print("Votre question a pour contexte celui de la question precedante : " .. listequestions[questionnumber-1].contexte)
-		question.contexte = listequestions[questionnumber-1].contexte
+		-- Si la question d'avant ne porte que sur un seul pays
+		if listequestions[questionnumber-1].contexte[1] == nil then
+			print("Votre question a pour contexte celui de la question precedante : " .. listequestions[questionnumber-1].contexte)
+			question.contexte = listequestions[questionnumber-1].contexte
+		-- Si elle avait plusieurs contextes
+		else
+			print("Votre question a pour contextes ceux de la question precedante : ")
+			question.contexte = {}
+			for K , V in pairs(listequestions[questionnumber-1].contexte) do
+				question.contexte[#question.contexte + 1] = V
+				print("--> (" .. K .. ") " .. question.contexte[#question.contexte])
+			end
+		end
+	-- Sinon la question n'a pas de contexte et on s'arrete la pour cette question
 	else
 		print("Votre question n'a pas de contexte")
 		question.contexte = nil
 	end
+
+	print(serialize(question.contexte))
 
 ----------------------------------------------------------------------------------------------------
 
@@ -366,7 +397,8 @@ repeat
 
 ----------------------------------------------------------------------------------------------------
 	
-	if question.contexte ~= nil then
+	-- Si la question a un seul et unique contexte
+	if question.contexte ~= nil and question.contexte[1] == nil then
 
 		--Trouver ce sur quoi porte la question
 		question.sujet = {}
@@ -380,58 +412,37 @@ repeat
 			end
 		end
 
-		print(serialize(question.sujet))
-
 		if question.sujet[1] ~= nil then
 			if #question.sujet == 1 then
 				print("Le sujet de votre question est : " .. question.sujet[1])
 			else
 				print("Les sujets de votre question sont : ")
 				for i = 1, #question.sujet do	
-					print("-->" .. question.sujet[i])
+					print("--> (" .. i .. ") " .. question.sujet[i])
 				end
 			end
 		elseif listequestions[questionnumber-1] ~= nil and
+		listequestions[questionnumber-1].sujet ~= nil and
 		listequestions[questionnumber-1].sujet[1] ~= nil then
 			if #listequestions[questionnumber-1].sujet == 1 then
 				print("Le sujet de votre question est le même que celui de la question précédante : " .. listequestions[questionnumber-1].sujet[1])
+				question.sujet[1] = listequestions[questionnumber-1].sujet[1]
 			else
 				print("Les sujets de votre question sont les mêmes que ceux de la question précédante: ")
 				for i = 1, #listequestions[questionnumber-1].sujet do	
-					print("-->" .. listequestions[questionnumber-1].sujet[i])
+					print("--> (" .. i .. ") " .. listequestions[questionnumber-1].sujet[i])
+					question.sujet[i] = listequestions[questionnumber-1].sujet[i]
 				end
 			end
 		else
 			print("Votre question ne porte sur rien")
 			question.sujet = nil
 		end
-
-		--[[
-		for k, v in pairs(tokentag) do
-			for K , V in pairs(bdd[question.contexte]) do
-				if (v:gsub("&", "") == K) then
-					question.sujet = K;
-					break;
-				end
-			end
-		end
-
-		if question.sujet ~= nil then
-			print("Le sujet de votre question est : " .. question.sujet)
-		elseif listequestions[questionnumber-1] ~= nil and
-		listequestions[questionnumber-1].sujet ~= nil then
-			print("Votre question a pour sujet celui de la question precedante : " .. listequestions[questionnumber-1].sujet)
-			question.sujet = listequestions[questionnumber-1].sujet
-		else
-			print("Votre question ne porte sur rien")
-			question.sujet = nil
-		end
-
-		--]]
 
 ----------------------------------------------------------------------------------------------------
 
-		if question.sujet[1] ~= nil then
+
+		if question.sujet ~= nil and question.sujet[1] ~= nil then
 
 			question.reponse = {}
 			
@@ -446,14 +457,18 @@ repeat
 			end
 		end
 
+	-- Si la question a plusieurs contextes ou si elle n'en a pas
+	else
+		print("Desole nous ne gerons pas encore les questions avec plusieurs contextes ou aucun")
 	end
 
 
 	listequestions[#listequestions + 1] = question
 	questionnumber = questionnumber + 1 
-until answer == "q"
+end
 
-print("\n\nHistorique question :")
+--[[print("\n\nHistorique question :")
 for i = 1, #listequestions do
 	print(listequestions[i].texte)
-end
+end--]]
+print(serialize(listequestions))
