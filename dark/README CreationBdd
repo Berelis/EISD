@@ -1,0 +1,4 @@
+Pour utiliser Creationbdd.lua la commande :
+lua CreationBdd.lua country/
+
+Le script lance ./dark main.lua sur chaque fichier du dossier country
