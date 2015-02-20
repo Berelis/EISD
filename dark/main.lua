@@ -3,7 +3,7 @@ dofile("../bdd.lua")
 
 --Appel des fichiers extérieurs
 require('position')
-require('langue')
+--require('langue')
 require('monnaie')
 
 
@@ -11,6 +11,7 @@ require('monnaie')
 local name = dark.pipeline()
 --chargement de la liste des prénom
 name:lexicon("&pays", "pays.txt")
+--name:lexicon("&pays", "pays2.txt")
 
 local main = dark.pipeline()
 --détéction des mots de la langue française
@@ -31,10 +32,20 @@ local tag = {
 	zone_euro = "black",
 	est_monnaie = "black",
 	devises = "black",
-	monnaie_complet = "blue"
+	monnaie_complet = "blue",
+	est_capitale = "blue",
+	capitale = "yellow"
 
 }
 
+function table_contains(table, element)
+	for _, value in pairs(table) do
+		if value == element then
+			return true
+		end
+	end
+	return false
+end
 
 function get_tokens(seq, debut, fin)
 	local tab = {}
@@ -115,42 +126,54 @@ modele  = {
 local nomPays = nil
 
 for line in io.lines() do
-	local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
+	--local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
 	local seq = main(line:lower():gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
 
 	if nomPays == nil then
 		nomPays = get_tags(seq, "&pays")[1]
 		if nomPays ~= nil and bdd[nomPays] == nil then
-			print("Pays " .. nomPays)
+			--print("Pays " .. nomPays)
 			bdd[nomPays] = modele
 		end
 	else
+		--Extraction Pays Frontaliers
 		local tmp = get_tags2(seq, "&frontalier", "&pays")
 		if tmp[1] ~= nil then 
 			bdd[nomPays].pays_frontalier = tmp[1]
 		end
-
+		--Exrtraction Continent
 		tmp = get_tags(seq, "&continent")
 		if tmp[1] ~= nil then 
 			bdd[nomPays].continent = tmp[1]
 		end
+		--Extraction Capitale
+		tmp = get_tags(seq,"&capitale");
+		if tmp[1] ~= nil then
+			--print("Capitale : " .. serialize(tmp))
+			for i=1,#tmp do
+				if not table_contains(bdd[nomPays].capitale, tmp[i]) then
+					bdd[nomPays].capitale[#bdd[nomPays].capitale + 1] = tmp[i]
+				end
+			end
+		end
+
 
 		--Extraction monnaie
 		if bdd[nomPays].monnaie == "" then
 			tmp = get_tags(seq, "&zone_euro")
 			if tmp[1] ~= nil then
-				print("coucou1")
+				--print("coucou1")
 				bdd[nomPays].monnaie = "euro"
 			else
 				tmp = get_tags(seq, "&monnaie_complet")
 				if tmp[1] ~= nil then
-					print("coucou2")
-					print(tmp[1])
+					--print("coucou2")
+					--print(tmp[1])
 					bdd[nomPays].monnaie = tmp[1]
 				else
 					tmp = get_tagsTab(seq, "&est_monnaie")
 					if tmp[1] ~= nil then
-						print("coucou3")
+						--print("coucou3")
 						local res = ConcatSousTab(tmp[1], #tmp[1] , #tmp[1])
 						print(res)
 						bdd[nomPays].monnaie = res
@@ -165,16 +188,7 @@ for line in io.lines() do
 	print(seq:tostring(tag))
 end
 
-print("affichage bdd")
+--print("affichage bdd")
 --print(serialize(bdd))
-if bdd["France"] == nil then
-	print("Y a pas la France")
-else
-	print("Y a la France")
-end
-if bdd["Afghanistan"] == nil then
-	print("Y a pas Afghanistan")
-else
-	print("Y a Afghanistan")
-end
+
 io.open("../bdd.lua","w"):write("bdd = " .. serialize(bdd))

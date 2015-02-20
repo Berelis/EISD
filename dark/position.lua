@@ -21,7 +21,22 @@ position:pattern([[
 ]])
 
 position:pattern([[
-	[&frontalier ( /entouré/ | /bordé/ | /frontalier/ | (/frontière/ .?)) &PCT? (&CON? &cardinaux? (/avec/ | /par/)? &DET? &pays &cardinaux? &PCT?)+
+	[&frontalier ( /limitrophe/ /de/ | /entouré/ | /bordé/ | /frontalier/ | (/frontière/ .?)) &PCT? (&CON? &ADV? &cardinaux? (/avec/ | /par/)? (&ADP | /d'/)? &DET? (&pays | (/[Ss]ahara/ | /[Mm]er/ . | /[Oo]céan/ .) (&NNP | &ADJ)? ) &cardinaux? &PCT?)+
+	]
+]])
+
+position:pattern([[
+	[&est_capitale (/^capitale/ .? (/est/ | /devient/) [&capitale &DET? .])
+	]
+]])
+
+position:pattern([[
+	[&est_capitale (/^capitale/ &PCT [&capitale &DET? .])
+	]
+]])
+
+position:pattern([[
+	[&est_capitale (/^capitale/ [&capitale &DET? &NNP+])
 	]
 ]])
 
