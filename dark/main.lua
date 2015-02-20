@@ -3,8 +3,9 @@ dofile("../bdd.lua")
 
 --Appel des fichiers extérieurs
 require('position')
---require('langue')
+require('langue')
 require('monnaie')
+require('religion')
 
 
 
@@ -22,9 +23,10 @@ main:add(name)
 main:add(position)
 main:add(langue)
 main:add(monnaie)
+main:add(religion)
 
 local tag = {
-	pays = "green",
+	pays = "blue",
 	continent = "red",
 	frontalier = "blue",
 	est_frontalier = "yellow",
@@ -34,7 +36,11 @@ local tag = {
 	devises = "black",
 	monnaie_complet = "blue",
 	est_capitale = "blue",
-	capitale = "yellow"
+	capitale = "yellow",
+	langue_pays = "green",
+	langue = "green",
+	est_religion = "red",
+	religion = ""
 
 }
 
