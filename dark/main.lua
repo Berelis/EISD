@@ -40,7 +40,7 @@ local tag = {
 	langue_pays = "green",
 	langue = "green",
 	est_religion = "red",
-	religion = ""
+	religion = "red"
 
 }
 
@@ -168,23 +168,35 @@ for line in io.lines() do
 		if bdd[nomPays].monnaie == "" then
 			tmp = get_tags(seq, "&zone_euro")
 			if tmp[1] ~= nil then
-				--print("coucou1")
 				bdd[nomPays].monnaie = "euro"
 			else
 				tmp = get_tags(seq, "&monnaie_complet")
 				if tmp[1] ~= nil then
-					--print("coucou2")
-					--print(tmp[1])
 					bdd[nomPays].monnaie = tmp[1]
 				else
 					tmp = get_tagsTab(seq, "&est_monnaie")
 					if tmp[1] ~= nil then
-						--print("coucou3")
 						local res = ConcatSousTab(tmp[1], #tmp[1] , #tmp[1])
 						print(res)
 						bdd[nomPays].monnaie = res
 					end
 				end
+			end
+		end
+
+		--Extraction relgion
+		if bdd[nomPays].religion == "" then
+			tmp = get_tags(seq, "&religion")
+			if tmp[1] ~= nil then
+				bdd[nomPays].religion = tmp[1]
+			end
+		end
+
+		--Extraction langue
+		if bdd[nomPays].langue == "" then
+			tmp = get_tags(seq, "&langue")
+			if tmp[1] ~= nil then
+				bdd[nomPays].langue = tmp[1]
 			end
 		end
 
