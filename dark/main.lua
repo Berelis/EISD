@@ -6,7 +6,9 @@ require('position')
 require('langue')
 require('monnaie')
 require('religion')
+require('nombre')
 require('population')
+require('superficie')
 
 
 
@@ -20,12 +22,14 @@ local main = dark.pipeline()
 main:model("model/postag-fr")
 
 --ajout des pattern créés précédemments
+main:add(nombre)
 main:add(name)
 main:add(position)
 main:add(langue)
 main:add(monnaie)
 main:add(religion)
 main:add(population)
+main:add(superficie)
 
 local tag = {
 	pays = "blue",
@@ -44,10 +48,12 @@ local tag = {
 	est_religion = "red",
 	religion = "red",
 	NUM = "white",
-	puissanceDix = "white",
 	population = "magenta",
-	nb_population = "magenta",
-	DET = "cyan"
+	nb_population = "cyan",
+	superficie_pays = "black",
+	superficie = "yellow",
+	--nombre = "yellow",
+	nombre_complet = "yellow"
 
 }
 
@@ -205,6 +211,19 @@ for line in io.lines() do
 			if tmp[1] ~= nil then
 				bdd[nomPays].langue = tmp[1]
 			end
+		end
+
+		--Extraction population
+		tmp = get_tags(seq, "&nb_population")
+		if tmp[1] ~= nil then
+			bdd[nomPays].population = tmp[1]
+		end
+
+
+		--Extraction superficie
+		tmp = get_tags(seq, "&superficie")
+		if tmp[1] ~= nil then
+			bdd[nomPays].superficie = tmp[1]
 		end
 
 
