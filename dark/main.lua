@@ -6,6 +6,7 @@ require('position')
 require('langue')
 require('monnaie')
 require('religion')
+require('population')
 
 
 
@@ -24,6 +25,7 @@ main:add(position)
 main:add(langue)
 main:add(monnaie)
 main:add(religion)
+main:add(population)
 
 local tag = {
 	pays = "blue",
@@ -40,7 +42,12 @@ local tag = {
 	langue_pays = "green",
 	langue = "green",
 	est_religion = "red",
-	religion = "red"
+	religion = "red",
+	NUM = "white",
+	puissanceDix = "white",
+	population = "magenta",
+	nb_population = "magenta",
+	DET = "cyan"
 
 }
 
