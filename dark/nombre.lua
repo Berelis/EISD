@@ -10,7 +10,6 @@ nombre:pattern(
 	 [&NUM /[0-9]+$/]
 ]])
 
-
 nombre:pattern(
 [[
 	[&nombre (/un$/ | 
@@ -38,9 +37,13 @@ nombre:pattern(
 				)]
 ]])
 
+-- nombre:pattern(
+-- [[
+-- 	[&nombre_complet  ]
+-- ]])
 
 nombre:pattern(
 [[
-	[&nombre_complet (&NUM | &nombre)+  &puissanceDix?]
+	[&nombre_complet ( &NUM /,/ &NUM | &NUM | &nombre)+  &puissanceDix?]
 ]])
 

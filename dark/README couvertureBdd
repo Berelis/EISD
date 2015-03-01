@@ -1,2 +1,3 @@
 Pour utiliser couvertureBdd la commande c'est :
 ./dark couvertureBdd
+(on utilise dark à cause du serialize)
