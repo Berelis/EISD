@@ -1,3567 +1,3707 @@
 bdd = {
-  slovaquie = {
-    langue = {
+  ["États-Unis"] = {
+    ["pays_frontalier"] = {
+      [1] = "Canada",
+      [2] = "Mexique",
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
+    population = "318 millions",
+    superficie = "",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "dollar américain",
+    continent = "Amérique",
+  },
+  Italie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
     capitale = {
+    },
+    religion = {
+    },
+    population = "soixante millions",
+    superficie = "",
+    langue = {
     },
     monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
+    continent = "Europe",
   },
-  ["corée du nord"] = {
-    langue = {
+  Allemagne = {
+    ["pays_frontalier"] = {
+      [6] = "France",
+      [1] = "Danemark",
+      [3] = "République",
+      [7] = "Luxembourg",
+      [8] = "Belgique",
+      [4] = "Autriche",
+      [9] = "Pays-Bas",
+      [2] = "Pologne",
+      [5] = "Suisse",
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-      [1] = "chine",
+    capitale = {
+      [1] = "Berlin",
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  ["république du congo"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "république",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  gabon = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  brunei = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  philippines = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "philippines",
-      [2] = "chine",
-    },
-    religion = "catholique",
-    capitale = {
-      [1] = "manille",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  ["suède"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "norvège",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "stockholm",
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  ["république démocratique du congo"] = {
-    langue = "francophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["timor oriental"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  guatemala = {
-    langue = "espagnol)",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "mexique",
-      [2] = "belize",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  ["costa rica"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "nicaragua",
-      [2] = "panama",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "4 889 826",
-    continent = "amérique",
-    regime = "",
-  },
-  serbie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "belgrade",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  vatican = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "catholique",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "0 , 44",
-    population = "832",
-    continent = "europe",
-    regime = "",
-  },
-  cambodge = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "thaïlande",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "15 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  ["république tchèque"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "pologne",
-      [2] = "allemagne",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  venezuela = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "caracas",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "amérique du sud",
-    regime = "",
-  },
-  ["népal"] = {
-    langue = "népalais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "chine",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "roupie népalaise",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  syrie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  kiribati = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  ["bahreïn"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "islamique",
-    capitale = {
-      [1] = "manama",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "1 234 571",
-    continent = "",
-    regime = "",
-  },
-  mongolie = {
-    langue = "mongol",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "tugrik",
-    superficie = "",
-    population = "2 , 8 millions",
-    continent = "asie",
-    regime = "",
-  },
-  allemagne = {
-    langue = "allemand",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [6] = "france",
-      [1] = "danemark",
-      [3] = "république",
-      [7] = "luxembourg",
-      [8] = "belgique",
-      [4] = "autriche",
-      [9] = "pays-bas",
-      [2] = "pologne",
-      [5] = "suisse",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
     population = "81 millions",
-    continent = "europe",
-    regime = "",
-  },
-  hongrie = {
+    superficie = "",
     langue = {
+      [1] = "allemand",
     },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  ["Sainte-Lucie"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-      [1] = "autriche",
-    },
-    religion = "catholicisme",
     capitale = {
-      [1] = ",",
-    },
-    monnaie = "",
-    superficie = "2 009",
-    population = "10 millions",
-    continent = "europe",
-    regime = "",
-  },
-  somalie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
+      [1] = "Castries",
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  angola = {
-    langue = "lusophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "république",
-      [1] = "république",
-      [3] = "namibie",
-      [4] = "zambie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  djibouti = {
+    population = "170 000",
+    superficie = "620",
     langue = {
     },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "somalie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
     monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  seychelles = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
     continent = "",
-    regime = "",
   },
-  zimbabwe = {
-    langue = "anglais",
+  Islande = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-      [2] = "botswana",
-      [1] = "afrique",
-      [3] = "mozambique",
-      [4] = "zambie",
+    capitale = {
+      [1] = "et",
     },
     religion = {
     },
+    population = "320 000",
+    superficie = "103 000",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Brésil"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
     capitale = {
     },
-    monnaie = "dollar zimbabwéen",
-    superficie = "",
-    population = "1 , 6 millions",
-    continent = "afrique",
+    religion = {
+      [1] = "catholique",
+      [2] = "protestants)",
+    },
+    population = "201 millions",
+    superficie = "8 514 876",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Belgique = {
+    ["pays_frontalier"] = {
+      [2] = "Allemagne",
+      [1] = "Pays-Bas",
+      [3] = "Luxembourg",
+      [4] = "France",
+    },
     regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Bruxelles",
+    },
+    religion = {
+    },
+    population = "onze millions",
+    superficie = "30 528",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Angola = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "lusophone",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Espagne = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "46 millions",
+    superficie = "504 030",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Équateur"] = {
+    ["pays_frontalier"] = {
+      [1] = "Pérou",
+      [2] = "Colombie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "283 520",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique du Sud",
   },
   ["Éthiopie"] = {
-    langue = {
-    },
-    position = {
-    },
     ["pays_frontalier"] = {
       [1] = "Érythrée",
     },
-    religion = "catholiques",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
     regime = "",
-  },
-  liban = {
-    langue = "arabe",
     position = {
     },
-    ["pays_frontalier"] = {
-      [1] = "syrie",
+    capitale = {
     },
     religion = {
+      [1] = "catholiques",
+      [2] = "protestants",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Birmanie = {
+    ["pays_frontalier"] = {
+      [5] = "Thaïlande",
+      [1] = "Bangladesh",
+      [2] = "Chine",
+      [3] = "Inde",
+      [4] = "Laos",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Géorgie"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "4 , 4 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "lari",
+    continent = "Europe",
+  },
+  ["Turkménistan"] = {
+    ["pays_frontalier"] = {
+      [2] = "Iran",
+      [1] = "Afghanistan",
+      [3] = "Kazakhstan",
+      [4] = "Ouzbékistan",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Barbade = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "430",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Chili = {
+    ["pays_frontalier"] = {
+      [2] = "Bolivie",
+      [1] = "Pérou",
+      [3] = "Argentine",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Santiago",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "peso (",
+    continent = "Amérique",
+  },
+  Samoa = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Maurice = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "570",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Jordanie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Amman",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Saint-Vincent-et-les Grenadines"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  ["Émirats arabes unis"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Grenade = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Saint-Georges",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "350",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Irlande = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Ouganda = {
+    ["pays_frontalier"] = {
+      [5] = "Tanzanie",
+      [1] = "République",
+      [2] = "Kenya",
+      [3] = "Rwanda",
+      [4] = "Soudan",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Belize = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "334 297",
+    superficie = "",
+    langue = {
+      [1] = "anglophone",
+    },
+    monnaie = "dollar bélizien",
+    continent = "Amérique",
+  },
+  Australie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Canberra",
+    },
+    religion = {
+    },
+    population = "23 millions",
+    superficie = "",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "dollar australien",
+    continent = "Océanie",
+  },
+  Finlande = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Helsinki",
+      [2] = "Turku",
+    },
+    religion = {
+    },
+    population = "5 , 3 millions",
+    superficie = "338 145",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Bulgarie = {
+    ["pays_frontalier"] = {
+      [1] = "Grèce",
+      [2] = "Turquie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Honduras = {
+    ["pays_frontalier"] = {
+      [1] = "Guatemala",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  ["République du Congo"] = {
+    ["pays_frontalier"] = {
+      [1] = "République",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Jamaïque"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Zambie = {
+    monnaie = "",
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Lusaka",
+    },
+    religion = {
+    },
+    population = "treize millions",
+    superficie = "",
+    langue = {
+    },
+    ["pays_frontalier"] = {
+    },
+    continent = "Afrique",
+  },
+  Russie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Moscou",
+    },
+    religion = {
+    },
+    population = "146 , 5 millions",
+    superficie = "dix-sept millions",
+    langue = {
+    },
+    monnaie = "rouble",
+    continent = "Europe",
+  },
+  ["Égypte"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Le Caire",
+    },
+    religion = {
+    },
+    population = "86 millions",
+    superficie = "",
+    langue = {
+      [1] = "arabe",
+      [2] = "par",
+    },
+    monnaie = "livre égyptienne",
+    continent = "Afrique",
+  },
+  Colombie = {
+    ["pays_frontalier"] = {
+      [5] = "Pérou",
+      [1] = "Panama",
+      [2] = "Venezuela",
+      [3] = "Brésil",
+      [4] = "Équateur",
+      [6] = "Colombie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "46 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Îles Salomon"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Burkina = {
+    ["pays_frontalier"] = {
+      [5] = "Ghana",
+      [1] = "Mali",
+      [2] = "Niger",
+      [3] = "Bénin",
+      [4] = "Togo",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Ouagadougou",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Afghanistan = {
+    ["pays_frontalier"] = {
+      [5] = "Ouzbékistan",
+      [1] = "Pakistan",
+      [2] = "Chine",
+      [3] = "Tadjikistan",
+      [4] = "Turkménistan",
+      [6] = "Iran",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+      [2] = "islamiste",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Brunei = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Madagascar = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Antananarivo",
+    },
+    religion = {
+    },
+    population = "22 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Malte = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "446 547",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  Fidji = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Océanie",
+  },
+  ["Yémen"] = {
+    ["pays_frontalier"] = {
+      [1] = "Yémen",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Sanaa",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "527 970",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Suisse = {
+    ["pays_frontalier"] = {
+      [5] = "Liechtenstein",
+      [1] = "Italie",
+      [2] = "France",
+      [3] = "Allemagne",
+      [4] = "Autriche",
+      [6] = "Suisse",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "parfois",
+    },
+    religion = {
+    },
+    population = "huit millions",
+    superficie = "41 285",
+    langue = {
+      [1] = "officielles",
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Ancienne république yougoslave de Macédoine"] = {
+    ["pays_frontalier"] = {
+      [5] = "Albanie",
+      [1] = "Grèce",
+      [2] = "Bulgarie",
+      [3] = "Serbie",
+      [4] = "Kosovo",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "deux millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Pérou"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "1 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Malaisie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Kuala",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "329 750",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Pays-Bas"] = {
+    ["pays_frontalier"] = {
+      [1] = "Belgique",
+      [2] = "Allemagne",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Amsterdam",
+    },
+    religion = {
+    },
+    population = "dix-sept millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Uruguay = {
+    ["pays_frontalier"] = {
+      [1] = "Brésil",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Montevideo",
+    },
+    religion = {
+    },
+    population = "1 500 000",
+    superficie = "176 220",
+    langue = {
+      [1] = "castillan",
+    },
+    monnaie = "peso uruguayen",
+    continent = "Amérique",
+  },
+  Autriche = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "allemand",
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  ["Israël"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "juifs",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Vanuatu = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Océanie",
+  },
+  Niue = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Kenya = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Viêt Nam"] = {
+    ["pays_frontalier"] = {
+      [2] = "Laos",
+      [1] = "Chine",
+      [3] = "Cambodge",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Hanoï",
+    },
+    religion = {
+    },
+    population = "90 millions",
+    superficie = "331 212",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Pologne = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "38 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Bahamas = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Nassau",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "anglophone",
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Seychelles = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Botswana = {
+    ["pays_frontalier"] = {
+      [1] = "Afrique",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Gaborone",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Zimbabwe = {
+    monnaie = "dollar zimbabwéen",
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "1 , 6 millions",
+    langue = {
+      [1] = "anglais",
+    },
+    superficie = "",
+    ["pays_frontalier"] = {
+      [1] = "Afrique",
+      [2] = "Botswana",
+      [3] = "Mozambique",
+      [4] = "Zambie",
+    },
+    continent = "Afrique",
+  },
+  ["Îles Cook"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Malawi = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Guinée"] = {
+    ["pays_frontalier"] = {
+      [1] = "Cameroun",
+      [2] = "Gabon",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Mozambique = {
+    ["pays_frontalier"] = {
+      [5] = "Zambie",
+      [1] = "Afrique",
+      [7] = "Tanzanie",
+      [2] = "Swaziland",
+      [3] = "Madagascar",
+      [4] = "Zimbabwe",
+      [6] = "Malawi",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "lusophone",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Maldives = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "21 372 , 72",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Libye = {
+    ["pays_frontalier"] = {
+      [5] = "Soudan",
+      [1] = "Algérie",
+      [2] = "Tunisie",
+      [3] = "Niger",
+      [4] = "Tchad",
+      [6] = "Égypte",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Tripoli",
+    },
+    religion = {
+    },
+    population = "8 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Thaïlande"] = {
+    ["pays_frontalier"] = {
+      [2] = "Malaisie",
+      [1] = "Birmanie",
+      [3] = "Cambodge",
+      [4] = "Laos",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Krung",
+    },
+    religion = {
+    },
+    population = "66 720 153",
+    superficie = "",
+    langue = {
+      [1] = "thaï",
+    },
+    monnaie = "baht",
+    continent = "Asie",
+  },
+  ["Îles Marshall"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Océanie",
+  },
+  ["Timor oriental"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Moldavie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Monténégro"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Cetinje",
+    },
+    religion = {
+    },
+    population = "170 000",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Niger = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Niamey",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Lituanie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Vilnius",
+    },
+    religion = {
+    },
+    population = "trois millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  Singapour = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "584 , 8",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  France = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Paris",
+    },
+    religion = {
+    },
+    population = "66 , 6 millions",
+    superficie = "",
+    langue = {
+      [1] = "francophones",
+    },
+    monnaie = "Liberté",
+    continent = "Europe",
+  },
+  Canada = {
+    ["pays_frontalier"] = {
+      [1] = "États-Unis",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "35 millions",
+    superficie = "10 millions",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "dollar canadien",
+    continent = "Asie",
+  },
+  Croatie = {
+    ["pays_frontalier"] = {
+      [5] = "Monténégro",
+      [1] = "Slovénie",
+      [2] = "Hongrie",
+      [3] = "Serbie",
+      [4] = "Bosnie-Herzégovine",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Zagreb",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Comores = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "franc comorien",
+    continent = "Afrique",
+  },
+  ["République populaire de Chine"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Pékin)et",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Argentine = {
+    ["pays_frontalier"] = {
+      [5] = "Uruguay",
+      [1] = "Chili",
+      [2] = "Bolivie",
+      [3] = "Paraguay",
+      [4] = "Brésil",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Buenos",
+    },
+    religion = {
+      [1] = "catholicisme",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "espagnol",
+    },
+    monnaie = "argentin",
+    continent = "Amérique",
+  },
+  Monaco = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "31 109",
+    superficie = "2 , 02",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Lesotho = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Liberia = {
+    ["pays_frontalier"] = {
+      [1] = "Sierra",
+      [2] = "Guinée",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Nicaragua = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Bolivie = {
+    ["pays_frontalier"] = {
+      [5] = "Pérou",
+      [1] = "Brésil",
+      [2] = "Paraguay",
+      [3] = "Argentine",
+      [4] = "Chili",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  ["Arménie"] = {
+    ["pays_frontalier"] = {
+      [2] = "Géorgie",
+      [1] = "Turquie",
+      [3] = "Azerbaïdjan",
+      [4] = "Iran",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Guatemala = {
+    ["pays_frontalier"] = {
+      [2] = "Belize",
+      [1] = "Mexique",
+      [3] = "Honduras",
+      [4] = "Salvador",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "espagnol)",
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  ["République démocratique du Congo"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "francophone",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Cambodge = {
+    ["pays_frontalier"] = {
+      [1] = "Thaïlande",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "15 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Rwanda = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "située",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Nauru = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "protestante",
+    },
+    population = "9 378",
+    superficie = "21 , 3",
+    langue = {
+    },
+    monnaie = "dollar australien",
+    continent = "Océanie",
+  },
+  Gabon = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Estonie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "se",
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  ["Sierra Leone"] = {
+    ["pays_frontalier"] = {
+      [1] = "Sierra",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "6 , 3 millions",
+    superficie = "71 740",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Trinité-et-Tobago"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  ["Sri Lanka"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "vingt millions",
+    superficie = "",
+    langue = {
+      [1] = "par",
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Japon = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Tokyo",
+    },
+    religion = {
+    },
+    population = "127 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Inde = {
+    ["pays_frontalier"] = {
+      [2] = "Chine",
+      [1] = "Pakistan",
+      [3] = "Népal",
+      [4] = "Bhoutan",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islam",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Ouzbékistan"] = {
+    ["pays_frontalier"] = {
+      [1] = "Kazakhstan",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Tachkent",
+    },
+    religion = {
+    },
+    population = "29 , 6 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Slovénie"] = {
+    ["pays_frontalier"] = {
+      [2] = "Autriche",
+      [1] = "Italie",
+      [3] = "Hongrie",
+      [4] = "Croatie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  Lettonie = {
+    ["pays_frontalier"] = {
+      [2] = "Estonie",
+      [1] = "Lituanie",
+      [3] = "Lettonie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  Venezuela = {
+    ["pays_frontalier"] = {
+      [1] = "Guyana",
+      [2] = "Brésil",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Caracas",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique du Sud",
+  },
+  Mauritanie = {
+    ["pays_frontalier"] = {
+      [2] = "Mali",
+      [1] = "Algérie",
+      [3] = "Sénégal",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Laos = {
+    ["pays_frontalier"] = {
+      [1] = "Birmanie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Vientiane",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Iran = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Téhéran",
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "77 891 220",
+    superficie = "1 648 195",
+    langue = {
+      [1] = "persan",
+    },
+    monnaie = "rial",
+    continent = "Asie",
+  },
+  ["Indonésie"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Jakarta",
+    },
+    religion = {
+      [1] = "islam",
+    },
+    population = "250 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Népal"] = {
+    ["pays_frontalier"] = {
+      [1] = "Chine",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "népalais",
+    },
+    monnaie = "roupie népalaise",
+    continent = "",
+  },
+  Mali = {
+    ["pays_frontalier"] = {
+      [2] = "Algérie",
+      [1] = "Mauritanie",
+      [3] = "Niger",
+      [4] = "Burkina",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "1 809 106",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Turquie = {
+    ["pays_frontalier"] = {
+      [5] = "Azerbaïdjan",
+      [1] = "Grèce",
+      [2] = "Bulgarie",
+      [3] = "Géorgie",
+      [4] = "Arménie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "turc",
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Tonga = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Nuku'",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "748",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Tchad = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "N'",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "1 284 000",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Salvador = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "et",
+    },
+    religion = {
+    },
+    population = "6 328 196",
+    superficie = "20 742",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Luxembourg = {
+    ["pays_frontalier"] = {
+      [1] = "Belgique",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "549 680",
+    superficie = "2 586",
+    langue = {
+    },
+    monnaie = "franc durant",
+    continent = "Europe",
+  },
+  ["République dominicaine"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "10 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Soudan = {
+    ["pays_frontalier"] = {
+      [5] = "Tchad",
+      [1] = "Libye",
+      [7] = "Soudan",
+      [2] = "Égypte",
+      [3] = "Érythrée",
+      [4] = "Éthiopie",
+      [6] = "République",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Djouba",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Cap-Vert"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Azerbaïdjan"] = {
+    ["pays_frontalier"] = {
+      [5] = "Iran",
+      [1] = "Arménie",
+      [2] = "Turquie",
+      [3] = "Géorgie",
+      [4] = "Russie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Bakou",
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "azéri",
+    },
+    monnaie = "manat",
+    continent = "Europe",
+  },
+  Philippines = {
+    ["pays_frontalier"] = {
+      [1] = "Philippines",
+      [2] = "Chine",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Manille",
+    },
+    religion = {
+      [1] = "catholique",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Pakistan = {
+    ["pays_frontalier"] = {
+      [2] = "Afghanistan",
+      [1] = "Iran",
+      [3] = "Chine",
+      [4] = "Inde",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "188 millions",
+    superficie = "",
+    langue = {
+      [1] = "penjabi",
+    },
+    monnaie = "livre à",
+    continent = "",
+  },
+  Hongrie = {
+    ["pays_frontalier"] = {
+      [1] = "Autriche",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Budapest",
+      [2] = ",",
+    },
+    religion = {
+      [1] = "catholicisme",
+    },
+    population = "10 millions",
+    superficie = "2 009",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Ghana = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "la ville",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "cédi",
+    continent = "Afrique",
+  },
+  ["République centrafricaine"] = {
+    ["pays_frontalier"] = {
+      [2] = "Tchad",
+      [1] = "Cameroun",
+      [3] = "Soudan",
+      [4] = "Soudan",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "4 500 000",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["État de Palestine"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Ukraine = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Kiev",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Serbie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Belgrade",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Royaume-Uni"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Londres",
+    },
+    religion = {
+    },
+    population = "64 millions",
+    superficie = "243 610",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Nouvelle-Zélande"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Wellington",
+    },
+    religion = {
+    },
+    population = "4 millions",
+    superficie = "",
+    langue = {
+      [1] = "anglais",
+    },
+    monnaie = "dollar néo-zélandais",
+    continent = "Océanie",
+  },
+  ["Grèce"] = {
+    ["pays_frontalier"] = {
+      [1] = "Albanie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Athènes",
+    },
+    religion = {
+    },
+    population = "onze millions",
+    superficie = "131 957",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Asie",
+  },
+  ["République tchèque"] = {
+    ["pays_frontalier"] = {
+      [1] = "Pologne",
+      [2] = "Allemagne",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Burundi = {
+    ["pays_frontalier"] = {
+      [2] = "Rwanda",
+      [1] = "République",
+      [3] = "Tanzanie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Bujumbura",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Mongolie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "2 , 8 millions",
+    superficie = "",
+    langue = {
+      [1] = "mongol",
+    },
+    monnaie = "tugrik",
+    continent = "Asie",
+  },
+  Gambie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "anglophone",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Namibie = {
+    ["pays_frontalier"] = {
+      [1] = "Angola",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Tunisie = {
+    ["pays_frontalier"] = {
+      [1] = "Libye",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Tunis",
+      [2] = "située",
+    },
+    religion = {
+      [1] = "islamisme",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Haïti"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Port-au-Prince",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "francophone",
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Liban = {
+    ["pays_frontalier"] = {
+      [1] = "Syrie",
+    },
+    regime = "",
+    position = {
     },
     capitale = {
       [1] = "est",
       [2] = "connue",
     },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "arabe",
+    },
     monnaie = "livre libanaise",
-    superficie = "",
-    population = "",
     continent = "",
-    regime = "",
   },
-  estonie = {
-    langue = "se",
+  Palaos = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Melekeok",
+      [2] = "Koror",
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
     population = "",
-    continent = "europe",
-    regime = "",
-  },
-  namibie = {
+    superficie = "",
     langue = {
     },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "angola",
-    },
-    religion = {
-    },
-    capitale = {
-    },
     monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  kenya = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["sri lanka"] = {
-    langue = "par",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "vingt millions",
-    continent = "asie",
-    regime = "",
-  },
-  ["Érythrée"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  croatie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "monténégro",
-      [1] = "slovénie",
-      [2] = "hongrie",
-      [3] = "serbie",
-      [4] = "bosnie-herzégovine",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "zagreb",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  vanuatu = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  albanie = {
-    langue = "albanais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "kosovo",
-      [1] = "monténégro",
-      [3] = "macédoine",
-      [4] = "grèce",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "tirana",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "7 millions",
-    continent = "europe",
-    regime = "",
-  },
-  ["israël"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "juifs",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  soudan = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "tchad",
-      [1] = "libye",
-      [7] = "soudan",
-      [2] = "Égypte",
-      [3] = "Érythrée",
-      [4] = "Éthiopie",
-      [6] = "république",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "djouba",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  cuba = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "la havane",
-    },
-    monnaie = "peso cubain",
-    superficie = "",
-    population = "11 241 161",
-    continent = "amérique",
-    regime = "",
-  },
-  ["thaïlande"] = {
-    langue = "thaï",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "malaisie",
-      [1] = "birmanie",
-      [3] = "cambodge",
-      [4] = "laos",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "krung",
-      [2] = "bangkok",
-    },
-    monnaie = "baht",
-    superficie = "",
-    population = "66 720 153",
-    continent = "asie",
-    regime = "",
-  },
-  ["yémen"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "yémen",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "sanaa",
-    },
-    monnaie = "",
-    superficie = "527 970",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  mauritanie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "mali",
-      [1] = "algérie",
-      [3] = "sénégal",
-    },
-    religion = "islamique",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  suriname = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  ["papouasie-nouvelle-guinée"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  madagascar = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "antananarivo",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "22 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  malte = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "446 547",
-    continent = "europe",
-    regime = "",
-  },
-  ["antigua-et-barbuda"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  ["nigéria"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "177 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  liberia = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "sierra",
-      [2] = "guinée",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  dominique = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  irak = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "islamisation",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "435 052",
-    population = "trois",
-    continent = "",
-    regime = "",
-  },
-  ["saint-vincent-et-les grenadines"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  ukraine = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "kiev",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  argentine = {
-    langue = "espagnol",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "uruguay",
-      [1] = "chili",
-      [2] = "bolivie",
-      [3] = "paraguay",
-      [4] = "brésil",
-    },
-    religion = "catholicisme",
-    capitale = {
-      [1] = "buenos",
-    },
-    monnaie = "peso argentin",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  belgique = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "allemagne",
-      [1] = "pays-bas",
-      [3] = "luxembourg",
-      [4] = "france",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "30 528",
-    population = "onze millions",
-    continent = "europe",
-    regime = "",
-  },
-  ["États-unis"] = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "canada",
-      [2] = "mexique",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "dollar américain",
-    superficie = "",
-    population = "318 millions",
-    continent = "amérique",
-    regime = "",
-  },
-  maurice = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "570",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["grèce"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "ancienne",
-      [1] = "albanie",
-      [3] = "bulgarie",
-      [4] = "turquie",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "athènes",
-    },
-    monnaie = "euro",
-    superficie = "131 957",
-    population = "onze millions",
-    continent = "asie",
-    regime = "",
-  },
-  ouganda = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "tanzanie",
-      [1] = "république",
-      [2] = "kenya",
-      [3] = "rwanda",
-      [4] = "soudan",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  comores = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "islamique",
-    capitale = {
-    },
-    monnaie = "franc comorien",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["Îles marshall"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  malawi = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  finlande = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "helsinki",
-      [2] = "turku",
-    },
-    monnaie = "",
-    superficie = "338 145",
-    population = "5 , 3 millions",
-    continent = "europe",
-    regime = "",
-  },
-  panama = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "3 460 462",
-    continent = "amérique",
-    regime = "",
-  },
-  ghana = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "la ville",
-    },
-    monnaie = "cédi",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  malaisie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "kuala lumpur",
-    },
-    monnaie = "",
-    superficie = "329 750",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  ["république dominicaine"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "10 millions",
-    continent = "",
-    regime = "",
-  },
-  tuvalu = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  burundi = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "rwanda",
-      [1] = "république",
-      [3] = "tanzanie",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "bujumbura",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["ancienne république yougoslave de macédoine"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "albanie",
-      [1] = "grèce",
-      [2] = "bulgarie",
-      [3] = "serbie",
-      [4] = "kosovo",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "deux millions",
-    continent = "europe",
-    regime = "",
-  },
-  ["sierra leone"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "sierra",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "71 740",
-    population = "6 , 3 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  barbade = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "430",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  togo = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "7 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  islande = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "et",
-    },
-    monnaie = "",
-    superficie = "103 000",
-    population = "320 000",
-    continent = "europe",
-    regime = "",
-  },
-  ["corée du sud"] = {
-    langue = "coréen",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "séoul",
-    },
-    monnaie = "won",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  fidji = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  france = {
-    langue = "francophones",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "liberté",
-    superficie = "",
-    population = "66 , 6 millions",
-    continent = "europe",
-    regime = "",
-  },
-  tonga = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "nuku'",
-    },
-    monnaie = "",
-    superficie = "748",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  samoa = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  ["pérou"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "chili",
-      [1] = "Équateur",
-      [2] = "colombie",
-      [3] = "brésil",
-      [4] = "bolivie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "1 millions",
-    continent = "asie",
-    regime = "",
-  },
-  ["Égypte"] = {
-    langue = "arabe",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "le caire",
-    },
-    monnaie = "livre égyptienne",
-    superficie = "",
-    population = "86 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  mali = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "algérie",
-      [1] = "mauritanie",
-      [3] = "niger",
-      [4] = "burkina",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "1 809 106",
-    continent = "afrique",
-    regime = "",
-  },
-  ["guinée"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "cameroun",
-      [2] = "gabon",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["turkménistan"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "iran",
-      [1] = "afghanistan",
-      [3] = "kazakhstan",
-      [4] = "ouzbékistan",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  japon = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "127 millions",
-    continent = "asie",
-    regime = "",
-  },
-  kazakhstan = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  ["sao tomé-et-principe"] = {
-    langue = "portugais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["koweït"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  liechtenstein = {
-    langue = "germanophones",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "suisse",
-      [2] = "autriche",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "vaduz",
-    },
-    monnaie = "",
-    superficie = "160",
-    population = "36 000",
-    continent = "europe",
-    regime = "",
-  },
-  afghanistan = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "ouzbékistan",
-      [1] = "pakistan",
-      [2] = "chine",
-      [3] = "tadjikistan",
-      [4] = "turkménistan",
-      [6] = "iran",
-    },
-    religion = "islamiste",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  ["trinité-et-tobago"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  birmanie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "thaïlande",
-      [1] = "bangladesh",
-      [2] = "chine",
-      [3] = "inde",
-      [4] = "laos",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  zambie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "lusaka",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "treize millions",
-    continent = "afrique",
-    regime = "",
-  },
-  tanzanie = {
-    langue = "kiswahili",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "république",
-      [1] = "kenya",
-      [7] = "malawi",
-      [2] = "ouganda",
-      [6] = "zambie",
-      [3] = "rwanda",
-      [8] = "mozambique",
-      [4] = "burundi",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "dodoma",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "43 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  turquie = {
-    langue = "turc",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "azerbaïdjan",
-      [1] = "grèce",
-      [2] = "bulgarie",
-      [3] = "géorgie",
-      [4] = "arménie",
-    },
-    religion = "islamique",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  ["Îles cook"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  ["viêt nam"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "laos",
-      [1] = "chine",
-      [3] = "cambodge",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "hanoï",
-    },
-    monnaie = "",
-    superficie = "331 212",
-    population = "90 millions",
-    continent = "asie",
-    regime = "",
+    continent = "Océanie",
   },
-  ["micronésie"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  mozambique = {
-    langue = "lusophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "zambie",
-      [1] = "afrique",
-      [7] = "tanzanie",
-      [2] = "swaziland",
-      [3] = "madagascar",
-      [4] = "zimbabwe",
-      [6] = "malawi",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["saint-christophe-et-niévès"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  chili = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "bolivie",
-      [1] = "pérou",
-      [3] = "argentine",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "santiago",
-    },
-    monnaie = "peso (",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  monaco = {
-    langue = {
-    },
-    position = {
-    },
+  ["Afrique du Sud"] = {
     ["pays_frontalier"] = {
-    },
-    religion = {
+      [5] = "Swaziland",
+      [1] = "Namibie",
+      [2] = "Botswana",
+      [3] = "Zimbabwe",
+      [4] = "Mozambique",
+      [6] = "Lesotho",
     },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "2 , 02",
-    population = "31 109",
-    continent = "europe",
     regime = "",
-  },
-  italie = {
-    langue = {
-    },
     position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
     },
     capitale = {
+      [2] = "Le Cap",
+      [1] = "Pretoria",
+      [3] = "Bloemfontein",
     },
-    monnaie = "euro",
-    superficie = "",
-    population = "soixante millions",
-    continent = "europe",
-    regime = "",
-  },
-  ["afrique du sud"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "swaziland",
-      [1] = "namibie",
-      [2] = "botswana",
-      [3] = "zimbabwe",
-      [4] = "mozambique",
-      [6] = "lesotho",
-    },
     religion = {
-    },
-    capitale = {
-      [2] = "le cap",
-      [1] = "pretoria",
-      [3] = "bloemfontein",
     },
-    monnaie = "",
-    superficie = "",
     population = "54 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  jordanie = {
+    superficie = "",
     langue = {
     },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Qatar = {
+    ["pays_frontalier"] = {
+      [1] = "Arabie",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Doha",
     },
     religion = {
     },
-    capitale = {
-      [1] = "amman",
-    },
-    monnaie = "",
-    superficie = "",
     population = "",
-    continent = "asie",
-    regime = "",
-  },
-  guyana = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "suriname",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "245 000",
-    continent = "amérique du sud",
-    regime = "",
-  },
-  bulgarie = {
+    superficie = "11 586",
     langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "grèce",
-      [2] = "turquie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  russie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "moscou",
-    },
-    monnaie = "rouble",
-    superficie = "dix-sept millions",
-    population = "146 , 5 millions",
-    continent = "europe",
-    regime = "",
-  },
-  lituanie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "vilnius",
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "trois millions",
-    continent = "europe",
-    regime = "",
-  },
-  pologne = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "38 millions",
-    continent = "europe",
-    regime = "",
-  },
-  colombie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "panama",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "46 millions",
-    continent = "europe",
-    regime = "",
-  },
-  ["algérie"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "mauritanie",
-      [1] = "tunisie",
-      [2] = "libye",
-      [3] = "niger",
-      [4] = "mali",
-      [6] = "maroc",
-    },
-    religion = "islam",
-    capitale = {
-      [1] = "alger",
-    },
-    monnaie = "",
-    superficie = "6 385",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  tunisie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "libye",
-    },
-    religion = "islamisme",
-    capitale = {
-      [1] = "située",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  maldives = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "21 372 , 72",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  qatar = {
-    langue = "arabe",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "arabie",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "doha",
+      [1] = "arabe",
     },
     monnaie = "qatarien",
-    superficie = "11 586",
-    population = "",
     continent = "",
-    regime = "",
   },
-  ["indonésie"] = {
-    langue = {
+  ["Algérie"] = {
+    ["pays_frontalier"] = {
+      [5] = "Mauritanie",
+      [1] = "Tunisie",
+      [2] = "Libye",
+      [3] = "Niger",
+      [4] = "Mali",
+      [6] = "Maroc",
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-    },
-    religion = "islam",
     capitale = {
-      [1] = "jakarta",
+      [1] = "Alger",
+    },
+    religion = {
+      [1] = "islam",
+    },
+    population = "",
+    superficie = "6 385",
+    langue = {
     },
     monnaie = "",
-    superficie = "",
-    population = "250 millions",
-    continent = "asie",
-    regime = "",
+    continent = "Afrique",
   },
-  ["arabie saoudite"] = {
-    langue = {
+  Danemark = {
+    ["pays_frontalier"] = {
     },
+    regime = "",
     position = {
     },
+    capitale = {
+      [1] = "Copenhague",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Tuvalu = {
     ["pays_frontalier"] = {
-      [5] = "qatar",
-      [1] = "irak",
-      [7] = "yémen",
-      [2] = "jordanie",
-      [3] = "koweït",
-      [4] = "oman",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  ["Guinée-Bissau"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Bissau",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "lusophone",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Papouasie-Nouvelle-Guinée"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Tanzanie = {
+    ["pays_frontalier"] = {
+      [5] = "République",
+      [1] = "Kenya",
+      [7] = "Malawi",
+      [2] = "Ouganda",
+      [6] = "Zambie",
+      [3] = "Rwanda",
+      [4] = "Burundi",
+      [8] = "Mozambique",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Dodoma",
+    },
+    religion = {
+    },
+    population = "43 millions",
+    superficie = "",
+    langue = {
+      [1] = "kiswahili",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Albanie = {
+    ["pays_frontalier"] = {
+      [2] = "Kosovo",
+      [1] = "Monténégro",
+      [3] = "Macédoine",
+      [4] = "Grèce",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Tirana",
+    },
+    religion = {
+    },
+    population = "7 millions",
+    superficie = "",
+    langue = {
+      [1] = "albanais",
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Costa Rica"] = {
+    ["pays_frontalier"] = {
+      [1] = "Nicaragua",
+      [2] = "Panama",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "San José",
+    },
+    religion = {
+    },
+    population = "4 889 826",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Bhoutan = {
+    ["pays_frontalier"] = {
+      [1] = "Chine",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "750 000",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Arabie saoudite"] = {
+    ["pays_frontalier"] = {
+      [5] = "Qatar",
+      [1] = "Irak",
+      [7] = "Yémen",
+      [2] = "Jordanie",
+      [3] = "Koweït",
+      [4] = "Oman",
       [6] = "Émirats",
     },
-    religion = "islam",
+    regime = "",
+    position = {
+    },
     capitale = {
     },
-    monnaie = "",
+    religion = {
+      [1] = "islam",
+    },
+    population = "",
     superficie = "deux millions",
-    population = "",
+    langue = {
+    },
+    monnaie = "",
     continent = "",
-    regime = "",
   },
-  libye = {
-    langue = {
-    },
-    position = {
-    },
+  Dominique = {
     ["pays_frontalier"] = {
-      [5] = "soudan",
-      [1] = "algérie",
-      [2] = "tunisie",
-      [3] = "niger",
-      [4] = "tchad",
-      [6] = "Égypte",
     },
-    religion = {
-    },
-    capitale = {
-      [1] = "tripoli",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "8 millions",
-    continent = "afrique",
     regime = "",
-  },
-  ["Équateur"] = {
-    langue = {
-    },
     position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "pérou",
-      [2] = "colombie",
-    },
-    religion = {
     },
     capitale = {
     },
-    monnaie = "",
-    superficie = "283 520",
+    religion = {
+    },
     population = "",
-    continent = "amérique du sud",
-    regime = "",
-  },
-  ["bosnie-herzégovine"] = {
+    superficie = "",
     langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "serbie",
-      [1] = "croatie",
-      [3] = "monténégro",
-    },
-    religion = {
-    },
-    capitale = {
     },
     monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
+    continent = "",
   },
-  ["arménie"] = {
-    langue = {
+  Guyana = {
+    ["pays_frontalier"] = {
+      [1] = "Suriname",
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-      [2] = "géorgie",
-      [1] = "turquie",
-      [3] = "azerbaïdjan",
-      [4] = "iran",
+    capitale = {
     },
     religion = {
     },
-    capitale = {
+    population = "245 000",
+    superficie = "",
+    langue = {
+      [1] = "anglais",
     },
     monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
+    continent = "Amérique du Sud",
   },
-  autriche = {
-    langue = "allemand",
+  Liechtenstein = {
+    ["pays_frontalier"] = {
+      [1] = "Suisse",
+      [2] = "Autriche",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Vaduz",
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  ["norvège"] = {
+    population = "36 000",
+    superficie = "160",
     langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "finlande",
-      [1] = "suède",
-      [3] = "russie",
-    },
-    religion = {
-    },
-    capitale = {
+      [1] = "germanophones",
     },
     monnaie = "",
-    superficie = "",
-    population = "5 millions",
-    continent = "europe",
-    regime = "",
+    continent = "Europe",
   },
-  ["bénin"] = {
-    langue = {
+  Somalie = {
+    ["pays_frontalier"] = {
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
-    capitale = {
-      [1] = "porto-novo",
+    population = "",
+    superficie = "",
+    langue = {
     },
-    monnaie = "franc cfa",
-    superficie = "670",
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Micronésie"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Océanie",
+  },
+  ["Nigéria"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "177 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Cuba = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "La Havane",
+    },
+    religion = {
+    },
+    population = "11 241 161",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "peso cubain",
+    continent = "Amérique",
+  },
+  ["Koweït"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Bahreïn"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Manama",
+    },
+    religion = {
+      [1] = "islam",
+      [2] = "islamique",
+    },
+    population = "1 234 571",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  ["Bénin"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Porto-Novo",
+    },
+    religion = {
+    },
     population = "9 983 884",
-    continent = "afrique",
-    regime = "",
+    superficie = "670",
+    langue = {
+    },
+    monnaie = "franc CFA",
+    continent = "Afrique",
   },
-  uruguay = {
-    langue = "castillan",
+  ["Saint-Christophe-et-Niévès"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-      [1] = "brésil",
+    capitale = {
     },
     religion = {
     },
-    capitale = {
-      [1] = "montevideo",
-    },
-    monnaie = "peso uruguayen",
-    superficie = "176 220",
-    population = "1 500 000",
-    continent = "amérique",
-    regime = "",
-  },
-  bahamas = {
-    langue = "anglophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "nassau",
+    population = "",
+    superficie = "",
+    langue = {
     },
     monnaie = "",
-    superficie = "",
-    population = "",
     continent = "",
-    regime = "",
   },
-  nicaragua = {
+  ["Bosnie-Herzégovine"] = {
+    ["pays_frontalier"] = {
+      [2] = "Serbie",
+      [1] = "Croatie",
+      [3] = "Monténégro",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
     langue = {
     },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Panama = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "",
+    population = "3 460 462",
     superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  iran = {
-    langue = "persan",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "islamique",
-    capitale = {
-      [1] = "téhéran",
-    },
-    monnaie = "rial",
-    superficie = "1 648 195",
-    population = "77 891 220",
-    continent = "asie",
-    regime = "",
-  },
-  ["guinée-bissau"] = {
-    langue = "lusophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "bissau",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  maroc = {
     langue = {
     },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  ["Corée du Nord"] = {
+    ["pays_frontalier"] = {
+      [1] = "Chine",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-    },
-    religion = "islamique",
     capitale = {
-      [1] = "rabat",
     },
-    monnaie = "",
-    superficie = "446 550",
-    population = "33 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  niger = {
+    religion = {
+    },
+    population = "",
+    superficie = "",
     langue = {
     },
+    monnaie = "",
+    continent = "Asie",
+  },
+  ["Suède"] = {
+    ["pays_frontalier"] = {
+      [1] = "Norvège",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Stockholm",
     },
     religion = {
     },
-    capitale = {
-      [1] = "niamey",
-    },
-    monnaie = "",
-    superficie = "",
     population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  rwanda = {
+    superficie = "",
     langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "située",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["république populaire de chine"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "pékin)et deux",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  palaos = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "melekeok",
-      [2] = "koror",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "océanie",
-    regime = "",
-  },
-  andorre = {
-    langue = "catalan",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "espagne",
-      [2] = "france",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "andorre-la-vieille",
     },
     monnaie = "euro",
-    superficie = "468",
-    population = "85 082",
-    continent = "europe",
-    regime = "",
+    continent = "Europe",
   },
-  ["brésil"] = {
-    langue = {
+  Swaziland = {
+    ["pays_frontalier"] = {
+      [1] = "Mozambique",
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
-    },
-    religion = "catholique",
     capitale = {
     },
-    monnaie = "",
-    superficie = "8 514 876",
-    population = "201 millions",
-    continent = "amérique",
-    regime = "",
-  },
-  ["azerbaïdjan"] = {
-    langue = "azéri",
-    position = {
+    religion = {
     },
-    ["pays_frontalier"] = {
-      [5] = "iran",
-      [1] = "arménie",
-      [2] = "turquie",
-      [3] = "géorgie",
-      [4] = "russie",
-    },
-    religion = "islamique",
-    capitale = {
-      [1] = "bakou",
-    },
-    monnaie = "manat",
-    superficie = "",
     population = "",
-    continent = "europe",
-    regime = "",
+    superficie = "",
+    langue = {
+      [1] = "siSwazi",
+    },
+    monnaie = "",
+    continent = "Afrique",
   },
-  swaziland = {
-    langue = "siswazi",
-    position = {
-    },
+  Suriname = {
     ["pays_frontalier"] = {
-      [1] = "mozambique",
     },
-    religion = {
+    regime = "",
+    position = {
     },
     capitale = {
     },
-    monnaie = "",
-    superficie = "",
+    religion = {
+    },
     population = "",
-    continent = "afrique",
-    regime = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
   },
-  ["haïti"] = {
-    langue = "francophone",
+  Vatican = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
     position = {
     },
+    capitale = {
+    },
+    religion = {
+      [1] = "catholique",
+    },
+    population = "832",
+    superficie = "0 , 44",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Kiribati = {
     ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
     },
     religion = {
     },
-    capitale = {
-      [1] = "port-au-prince",
-    },
-    monnaie = "",
-    superficie = "",
     population = "",
-    continent = "",
-    regime = "",
-  },
-  suisse = {
-    langue = "officielles",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "liechtenstein",
-      [1] = "italie",
-      [2] = "france",
-      [3] = "allemagne",
-      [4] = "autriche",
-      [6] = "suisse",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "parfois",
-    },
-    monnaie = "",
-    superficie = "41 285",
-    population = "huit millions",
-    continent = "europe",
-    regime = "",
-  },
-  bangladesh = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "birmanie",
-    },
-    religion = "islamique",
-    capitale = {
-    },
-    monnaie = "",
     superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  bolivie = {
     langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "pérou",
-      [1] = "brésil",
-      [2] = "paraguay",
-      [3] = "argentine",
-      [4] = "chili",
-    },
-    religion = {
-    },
-    capitale = {
     },
     monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
+    continent = "Océanie",
   },
-  ["royaume-uni"] = {
-    langue = {
+  Togo = {
+    ["pays_frontalier"] = {
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
-    capitale = {
-      [1] = "londres",
+    population = "7 millions",
+    superficie = "",
+    langue = {
     },
     monnaie = "",
-    superficie = "243 610",
-    population = "64 millions",
-    continent = "europe",
-    regime = "",
+    continent = "Afrique",
   },
-  ["géorgie"] = {
-    langue = {
-    },
-    position = {
-    },
+  Oman = {
     ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "lari",
-    superficie = "",
-    population = "4 , 4 millions",
-    continent = "europe",
-    regime = "",
-  },
-  roumanie = {
-    langue = "latine",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  canada = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "États-unis",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "dollar canadien",
-    superficie = "10 millions",
-    population = "35 millions",
-    continent = "asie",
-    regime = "",
-  },
-  ["monténégro"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "cetinje",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "170 000",
-    continent = "europe",
-    regime = "",
-  },
-  ["sainte-lucie"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "castries",
-    },
-    monnaie = "",
-    superficie = "620",
-    population = "170 000",
-    continent = "",
-    regime = "",
-  },
-  ["ouzbékistan"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "kazakhstan",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "tachkent",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "29 , 6 millions",
-    continent = "asie",
-    regime = "",
-  },
-  inde = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "chine",
-      [1] = "pakistan",
-      [3] = "népal",
-      [4] = "bhoutan",
-    },
-    religion = "islam",
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  mexique = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "mexico",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "119 millions",
-    continent = "amérique",
-    regime = "",
-  },
-  ["Émirats arabes unis"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  pakistan = {
-    langue = "penjabi",
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "afghanistan",
-      [1] = "iran",
-      [3] = "chine",
-      [4] = "inde",
-    },
-    religion = "islamique",
-    capitale = {
-    },
-    monnaie = "livre à",
-    superficie = "",
-    population = "188 millions",
-    continent = "",
-    regime = "",
-  },
-  lettonie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "estonie",
-      [1] = "lituanie",
-      [3] = "lettonie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  grenade = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "saint-georges",
-    },
-    monnaie = "",
-    superficie = "350",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  oman = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "arabie",
+      [2] = "Arabie",
       [1] = "Émirats",
-      [3] = "yémen",
+      [3] = "Yémen",
     },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
     regime = "",
-  },
-  chypre = {
-    langue = {
-    },
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  ["Érythrée"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
     capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Andorre = {
+    ["pays_frontalier"] = {
+      [1] = "Espagne",
+      [2] = "France",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Andorre-la-Vieille",
+    },
+    religion = {
+    },
+    population = "85 082",
+    superficie = "468",
+    langue = {
+      [1] = "catalan",
     },
     monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
+    continent = "Europe",
   },
-  portugal = {
-    langue = {
+  Syrie = {
+    ["pays_frontalier"] = {
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
     },
     religion = {
     },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Portugal = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
     capitale = {
-      [1] = "lisbonne",
+      [1] = "Lisbonne",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
     },
     monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
+    continent = "Europe",
   },
-  ["État de palestine"] = {
-    langue = {
+  Paraguay = {
+    ["pays_frontalier"] = {
     },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Asuncion",
     },
     religion = {
     },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  irlande = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  belize = {
-    langue = "anglophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "dollar bélizien",
-    superficie = "",
-    population = "334 297",
-    continent = "amérique",
-    regime = "",
-  },
-  ["Îles salomon"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  lesotho = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  singapour = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "584 , 8",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  ["saint-marin"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "2012 , 32 471",
-    continent = "europe",
-    regime = "",
-  },
-  bhoutan = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "chine",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "750 000",
-    continent = "asie",
-    regime = "",
-  },
-  ["slovénie"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "autriche",
-      [1] = "italie",
-      [3] = "hongrie",
-      [4] = "croatie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "euro",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  ["cap-vert"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  laos = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "birmanie",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "vientiane",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  tchad = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "n'",
-    },
-    monnaie = "",
-    superficie = "1 284 000",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["république centrafricaine"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "tchad",
-      [1] = "cameroun",
-      [3] = "soudan",
-      [4] = "soudan",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "4 500 000",
-    continent = "afrique",
-    regime = "",
-  },
-  espagne = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "504 030",
-    population = "46 millions",
-    continent = "afrique",
-    regime = "",
-  },
-  cameroun = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  botswana = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "afrique",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "gaborone",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  australie = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "canberra",
-    },
-    monnaie = "dollar australien",
-    superficie = "",
-    population = "23 millions",
-    continent = "océanie",
-    regime = "",
-  },
-  ["sénégal"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "mauritanie",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["jamaïque"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "",
-    regime = "",
-  },
-  honduras = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "guatemala",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "amérique",
-    regime = "",
-  },
-  moldavie = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  tadjikistan = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "tadjikistan",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "douchanbé",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "asie",
-    regime = "",
-  },
-  nauru = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = "protestante",
-    capitale = {
-    },
-    monnaie = "dollar australien",
-    superficie = "21 , 3",
-    population = "9 378",
-    continent = "océanie",
-    regime = "",
-  },
-  ["nouvelle-zélande"] = {
-    langue = "anglais",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "wellington",
-    },
-    monnaie = "dollar néo-zélandais",
-    superficie = "",
-    population = "4 millions",
-    continent = "océanie",
-    regime = "",
-  },
-  belarus = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "ukraine",
-      [1] = "pologne",
-      [2] = "lettonie",
-      [3] = "lituanie",
-      [4] = "russie",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "gomel",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "9 577 552",
-    continent = "europe",
-    regime = "",
-  },
-  gambie = {
-    langue = "anglophone",
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  ["pays-bas"] = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "belgique",
-      [2] = "allemagne",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "amsterdam",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "dix-sept millions",
-    continent = "europe",
-    regime = "",
-  },
-  burkina = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [5] = "ghana",
-      [1] = "mali",
-      [2] = "niger",
-      [3] = "bénin",
-      [4] = "togo",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "est",
-      [2] = "ouagadougou",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "afrique",
-    regime = "",
-  },
-  luxembourg = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [1] = "belgique",
-    },
-    religion = {
-    },
-    capitale = {
-    },
-    monnaie = "franc durant",
-    superficie = "2 586",
-    population = "549 680",
-    continent = "europe",
-    regime = "",
-  },
-  danemark = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "copenhague",
-    },
-    monnaie = "",
-    superficie = "",
-    population = "",
-    continent = "europe",
-    regime = "",
-  },
-  paraguay = {
-    langue = {
-    },
-    position = {
-    },
-    ["pays_frontalier"] = {
-      [2] = "brésil",
-      [1] = "argentine",
-      [3] = "bolivie",
-      [4] = "paraguay",
-    },
-    religion = {
-    },
-    capitale = {
-      [1] = "asuncion",
-    },
-    monnaie = "",
-    superficie = "406 750",
     population = "6 459 058",
-    continent = "amérique du sud",
-    regime = "",
-  },
-  niue = {
+    superficie = "406 750",
     langue = {
     },
+    monnaie = "",
+    continent = "Amérique du Sud",
+  },
+  Tadjikistan = {
+    ["pays_frontalier"] = {
+      [1] = "Tadjikistan",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Douchanbé",
     },
     religion = {
     },
-    capitale = {
+    population = "",
+    superficie = "",
+    langue = {
     },
     monnaie = "",
-    superficie = "",
+    continent = "Asie",
+  },
+  ["Sao Tomé-et-Principe"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
     population = "",
+    superficie = "",
+    langue = {
+      [1] = "portugais",
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Saint-Marin"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "2012 , 32 471",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Djibouti = {
+    ["pays_frontalier"] = {
+      [1] = "Somalie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Irak = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamisation",
+    },
+    population = "trois",
+    superficie = "435 052",
+    langue = {
+    },
+    monnaie = "",
     continent = "",
-    regime = "",
   },
-  kirghizie = {
-    langue = {
-    },
-    position = {
-    },
+  Cameroun = {
     ["pays_frontalier"] = {
     },
-    religion = {
+    regime = "",
+    position = {
     },
     capitale = {
     },
-    monnaie = "",
-    superficie = "",
+    religion = {
+    },
     population = "",
-    continent = "asie",
-    regime = "",
-  },
-  salvador = {
+    superficie = "",
     langue = {
     },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Belarus = {
+    ["pays_frontalier"] = {
+      [5] = "Ukraine",
+      [1] = "Pologne",
+      [2] = "Lettonie",
+      [3] = "Lituanie",
+      [4] = "Russie",
+    },
+    regime = "",
     position = {
     },
-    ["pays_frontalier"] = {
+    capitale = {
+      [1] = "Gomel",
     },
     religion = {
     },
-    capitale = {
-      [1] = "et",
+    population = "9 577 552",
+    superficie = "",
+    langue = {
     },
     monnaie = "",
-    superficie = "20 742",
-    population = "6 328 196",
-    continent = "amérique",
+    continent = "Europe",
+  },
+  Slovaquie = {
+    ["pays_frontalier"] = {
+    },
     regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  ["Norvège"] = {
+    ["pays_frontalier"] = {
+      [2] = "Finlande",
+      [1] = "Suède",
+      [3] = "Russie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Oslo",
+    },
+    religion = {
+    },
+    population = "5 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  ["Antigua-et-Barbuda"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Saint John'",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
+  },
+  Roumanie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "latine",
+    },
+    monnaie = "",
+    continent = "Europe",
+  },
+  Kazakhstan = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Mexique = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Mexico",
+    },
+    religion = {
+    },
+    population = "119 millions",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Amérique",
+  },
+  Maroc = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Rabat",
+    },
+    religion = {
+      [1] = "islamique",
+    },
+    population = "33 millions",
+    superficie = "446 550",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  ["Corée du Sud"] = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+      [1] = "Séoul",
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+      [1] = "coréen",
+    },
+    monnaie = "won",
+    continent = "Asie",
+  },
+  Kirghizie = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Asie",
+  },
+  Chypre = {
+    ["pays_frontalier"] = {
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "euro",
+    continent = "Europe",
+  },
+  ["Sénégal"] = {
+    ["pays_frontalier"] = {
+      [1] = "Mauritanie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "Afrique",
+  },
+  Bangladesh = {
+    ["pays_frontalier"] = {
+      [1] = "Birmanie",
+    },
+    regime = "",
+    position = {
+    },
+    capitale = {
+    },
+    religion = {
+      [1] = "islamique",
+      [2] = "islam",
+    },
+    population = "",
+    superficie = "",
+    langue = {
+    },
+    monnaie = "",
+    continent = "",
   },
 }
