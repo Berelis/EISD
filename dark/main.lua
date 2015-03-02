@@ -151,7 +151,7 @@ for line in io.lines() do
 	if nomPays == nil then
 		nomPays = get_tags(seq, "&pays")[1]
 		if nomPays ~= nil and bdd[nomPays] == nil then
-			--print("Pays " .. nomPays)
+			print("Pays " .. nomPays)
 			bdd[nomPays] = modele
 		end
 	else
@@ -168,7 +168,7 @@ for line in io.lines() do
 		--Extraction Capitale
 		tmp = get_tags(seq,"&capitale");
 		if tmp[1] ~= nil then
-			--print("Capitale : " .. serialize(tmp))
+			print("Capitale : " .. serialize(tmp))
 			for i=1,#tmp do
 				if not table_contains(bdd[nomPays].capitale, tmp[i]) then
 					bdd[nomPays].capitale[#bdd[nomPays].capitale + 1] = tmp[i]
@@ -198,20 +198,32 @@ for line in io.lines() do
 		end
 
 		--Extraction relgion
-		if bdd[nomPays].religion == "" then
+		--if bdd[nomPays].religion == "" then
 			tmp = get_tags(seq, "&religion")
 			if tmp[1] ~= nil then
-				bdd[nomPays].religion = tmp[1]
+				print("Religion : " .. serialize(tmp))
+				for i=1,#tmp do
+					if not table_contains(bdd[nomPays].religion, tmp[i]) then
+						bdd[nomPays].religion[#bdd[nomPays].religion + 1] = tmp[i]
+					end
+				end
 			end
-		end
+				--bdd[nomPays].religion = tmp[1]
+			--end
+		--end
 
 		--Extraction langue
-		if bdd[nomPays].langue == "" then
+		--if bdd[nomPays].langue == "" then
 			tmp = get_tags(seq, "&langue")
 			if tmp[1] ~= nil then
-				bdd[nomPays].langue = tmp[1]
+				for i=1,#tmp do
+					if not table_contains(bdd[nomPays].langue, tmp[i]) then
+						bdd[nomPays].langue[#bdd[nomPays].langue + 1] = tmp[i]
+					end
+				end
+				--bdd[nomPays].langue = tmp[1]
 			end
-		end
+		--end
 
 		--Extraction population
 		tmp = get_tags(seq, "&nb_population")
