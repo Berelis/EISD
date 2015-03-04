@@ -1,5 +1,5 @@
-dofile("../bdd.lua")
---local dir = arg[1]
+dofile("bdd.lua")
+
 local nbPays = 0
 local tabInfo = {
 	langue = 0,

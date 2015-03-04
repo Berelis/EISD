@@ -1,4 +1,4 @@
-dofile("../bdd.lua")
+dofile("bdd.lua")
 
 --print(serialize(pays))
 

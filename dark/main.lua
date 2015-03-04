@@ -1,6 +1,6 @@
 --récupération de la base de donnée actuelle
-if io.open("../bdd.lua","r") == nil then
-	local f = io.open("../bdd.lua","w")
+if io.open("bdd.lua","r") == nil then
+	local f = io.open("bdd.lua","w")
 	f:write("bdd = {}")
 	f:close()
 end
