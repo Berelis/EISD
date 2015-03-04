@@ -1,4 +1,10 @@
 --récupération de la base de donnée actuelle
+if io.open("../bdd.lua","r") == nil then
+	local f = io.open("../bdd.lua","w")
+	f:write("bdd = {}")
+	f:close()
+end
+
 dofile("../bdd.lua")
 
 --Appel des fichiers extérieurs
@@ -9,11 +15,12 @@ require('religion')
 require('nombre')
 require('population')
 require('superficie')
+require('regime')
 
 
 
 local name = dark.pipeline()
---chargement de la liste des prénom
+--chargement de la liste des pays
 name:lexicon("&pays", "pays.txt")
 --name:lexicon("&pays", "pays2.txt")
 
@@ -30,6 +37,7 @@ main:add(monnaie)
 main:add(religion)
 main:add(population)
 main:add(superficie)
+main:add(regime)
 
 local tag = {
 	pays = "blue",
@@ -53,7 +61,10 @@ local tag = {
 	superficie_pays = "black",
 	superficie = "yellow",
 	--nombre = "yellow",
-	nombre_complet = "yellow"
+	nombre_complet = "yellow",
+	est_regime = "green",
+	regime_complet = "white",
+	ADP = "black",
 
 }
 
@@ -238,6 +249,11 @@ for line in io.lines() do
 			bdd[nomPays].superficie = tmp[1]
 		end
 
+		--Extraction régime
+		tmp = get_tags(seq, "&regime_complet")
+		if tmp[1] ~= nil then
+			bdd[nomPays].regime = tmp[1]
+		end
 
 	end
 	--seq:dump()
@@ -247,4 +263,8 @@ end
 --print("affichage bdd")
 --print(serialize(bdd))
 
-io.open("../bdd.lua","w"):write("bdd = " .. serialize(bdd))
+f = io.open("../bdd.lua","w"):write("bdd = " .. serialize(bdd))
+f:flush()
+f.close()
+
+	
