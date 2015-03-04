@@ -42,8 +42,10 @@
 \section{Introduction}
 %Schema du systéme ?
 
-Le but du projet est de créer un système permettant d'engager un dialogue question-réponse avec un utilisateur. Le système répond en puisant les informations dans une base de données. Cette base à été préalablement remplis grâce à des informations extraites depuis différents éléments comme des texte, tableaux et ceci provenant de toute sources disponibles. 
-La circulation des données est illustrée par la figure \ref{fig:schema} en dessous.
+Le but du projet est de créer un système permettant d'engager un dialogue question-réponse avec un utilisateur.
+Le système répond en puisant les informations dans une base de données.
+Cette base à été préalablement remplie grâce à des informations extraites depuis différents éléments comme des textes et tableaux provenant de toutes les sources disponibles.
+La circulation des données est illustrée par la figure \ref{fig:schema} ci-dessous.
 
 \begin{figure}[!htb]
 	\includegraphics[width=\textwidth]{schemaSysteme.png}
@@ -51,14 +53,31 @@ La circulation des données est illustrée par la figure \ref{fig:schema} en des
 	\label{fig:schema}
 \end{figure}
 
-Des systèmes équivalent de grandes ampleurs sont déjà utilisés tous les jours. Pour ce projet, il est demandé de réaliser un version minimaliste avec des informations concentrés sur un seul sujet.
+Des systèmes équivalent de grandes ampleurs sont déjà utilisés tous les jours.
+Pour ce projet, il est demandé de réaliser un version minimaliste avec des informations concentrés sur un seul sujet.
 
-Il existe plusieurs manière de récupérer et remplir une base de données, les principales sont de récupérer directement les informations depuis un tableau, c'est la manière la plus rapide, la plus simple, et on obtient une grande masse de données. Ensuite extraire l'information depuis des textes, pour cela il faut établir des listes de règles et des expression régulière pour récupérer l'information. Cette méthode est donc plus compliqué à mettre en place, mais cela permets toujours d'automatiser la récupération de l'information. Ensuite quand les informations sont ne sont pas récupérable par les méthodes précédente, il est plus rentable d'ajouter manuellement une information dans la base de données que de créer une règle spécifique.
-Dans le projet on utilise la méthode d'extraction d'information dans les textes pour remplir de la base. Cela nous permets d'être confronté aux problèmes que pose la rédaction des règles.
+Il existe plusieurs manière de récupérer et remplir une base de données.
+La principale consiste à récupérer directement les informations depuis un tableau.
+C'est la manière la plus rapide, la plus simple, et on obtient une grande masse de données.
+Ensuite, il est également possible d'extraire l'information depuis différents textes.
+Pour cela il faut établir des listes de règles et des expressions régulières pour récupérer l'information.
+Cette méthode est donc plus compliqué à mettre en place, mais cela permet toujours d'automatiser la récupération de l'information.
+Enfin, quand les informations sont ne sont pas récupérables par les méthodes précédentes, il est plus rentable d'ajouter manuellement une information dans la base de données plutôt que de créer une règle spécifique.
+Ce projet se focalisera sur la la méthode d'extraction d'information dans les textes pour remplir de la base.
+Cela nous permets d'être confronté aux problèmes que pose la rédaction des règles.
 
-Deux sujets était proposés, le premier, des descriptions provenant du site Wikipédia d'un grand nombre de pays. Le second, des recettes et commentaires issues du site Marmiton. Nous avons choisis les descriptions des pays pour la propreté de rédaction des textes.
+Deux sujets étaient proposés :
+\begin{itemize}
+	\item Descriptions de pays provenant du site Wikipédia ;
+	\item Recettes de cuisines et commentaires issus du site Marmiton.
+\end{itemize}
 
-Le projet est réaliser en langage lua, langage de script léger et performant. On utilise un programme nommé dark qui est un outils de développement pour la création des règles. Celle-ci s'utilise de la même manière que des expressions régulières. L'outil permet également l'application de tag dans les textes et une sérialisation de tableau pour remplir la base de données faite en lua. 
+Nous avons choisis les descriptions des pays pour la propreté de rédaction des textes.
+
+Le projet est réalisé en langage Lua, langage de script léger et performant.
+On utilise un programme nommé dark qui est un outils de développement pour la création des règles.
+Celles-ci s'utilisent de la même manière que des expressions régulières.
+L'outil permet également l'application de tag dans les textes et une sérialisation de tableau pour remplir la base de données faite en Lua. 
 
 
 \clearpage
@@ -67,7 +86,8 @@ Le projet est réaliser en langage lua, langage de script léger et performant. 
 
 \subsection{Composition de la base de données}
 
-Pour démarrer, nous avons regardé une certaine quantité de description sur les pays et nous avons repéré les informations récurrente dans chaque fichier. Avec ceci nous avons crée la base fictive contenant chaque type d'information que l'on aimerait récupérer.
+Pour démarrer, nous avons regardé une certaine quantité de description sur les pays et nous avons repéré les informations récurrentes dans chaque fichier.
+Avec ceci nous avons créé une première base de données fictive contenant chaque type d'information que l'on souhaitait récupérer.
 
 Choix initial des informations à récupérer :
 \begin{itemize}
@@ -82,7 +102,9 @@ Choix initial des informations à récupérer :
 	\item Position (GPS, etc.)
 \end{itemize}
 
-L'information Position devait contenir une position GPS, ou tout autre élément permettant de situer le pays. Or la position GPS n'est pas présente dans les différents textes et la position est déjà donnée grâce aux informations Continent et Pays Frontaliers. Donc nous avons retirer l'information Position de notre base de données.
+Il était initialement prévu que l'information Position contienne les informations de position GPS du pays, ou tout autre élément permettant de le situer.
+Or la position GPS n'est pas présente dans les différents textes et la position est déjà donnée grâce aux informations Continent et Pays Frontaliers.
+Nous avons ainsi de retirer par la suite l'information "Position" de notre base de données.
 
 
 \subsection{Les problèmes rencontrés}
@@ -114,6 +136,7 @@ Plutôt que de consacrer beaucoup de temps à la création de règles spécifiqu
 
 \subsection{La couverture d'information de la base}
 Nous avons réaliser un script permettant de calculer le rapport d'information présente dans la base de données par rapport au nombre total de pays.
+Cela nous permettait ainsi de savoir si l'ajout d'une règle spécifique était utile ou non.
 
 Voici les résultats (arrondi au \%) après avoir effectué les dernières modifications sur nos règles :
 % bla bla completage
@@ -133,12 +156,19 @@ Voici les résultats (arrondi au \%) après avoir effectué les dernières modif
 
 
 \subsection{Améliorations possibles}
+A la suite de ce projet, plusieurs améliorations aurait pu être envisager pour la base de données :
 
-Vérifications de la qualité des informations dans la base de données :
-Par exemple, la liste des pays frontalier d'un pays X, on peut vérifier que chaque pays contenu dans la liste, a bien le pays X comme pays frontalier.
-De manière général, recouper les informations présente dans la base de données et compléter/vérifier les informations afin augmenté la qualité de la base.
-
-L'ajout et modification de quelques règles pour augmenter la couverture de l'information. Dans l'état actuel de la base de données certaines informations ne comporte qu'une ou deux règles pour l'extraction, même si la règle permets d'en obtenir un nombre conséquent, on peut améliorer ceci en rajouter un à deux règles supplémentaires.
+Vérifications de la qualité des informations dans la base de données : 	
+Certains textes ne fournissent pas d'informations sur les pays frontaliers du pays dont il est question.
+Or, ce même pays peut apparaître comme "pays frontalier" d'un second pays.
+Ainsi, si un pays X est frontaliers avec un pays Y, on aurait pu vérifier que Y était bien frontalier avec X et, si non, rajouter l'information.
+De manière plus générale, il aurait été intéressant de recroiser entre elles toutes les informations présentes dans la Base de Données pour pouvoir la compléter avec des informations non présentes dans les textes et vérifier celles déjà présentes.
+	
+	
+Ajout et modification de règles pour augmenter la couvertures de l'information :
+Dans l'état actuel de la base de données, certaines informations ne comporte qu'une ou deux règles pour l'extraction.
+Même si la règle permets d'en obtenir un nombre conséquent, on aurait pu améliorer ceci en rajouter des règles supplémentaires.
+Cependant, il aurait alors fallut faire attention à ne pas se retrouver dans un cas extrême où une nouvelle règle ne récupère l'information que pour un seul nouveau pays.
 
 \clearpage
 
