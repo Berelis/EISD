@@ -190,6 +190,13 @@ Pays en afrique =>
  
 Nous avons pensé à poser une question du type : «  Quels sont tous les pays dans la base de données qui possèdent l’euro ?». Pour répondre à cette question nous aurions pu parcourir la base jusqu’à atteindre le mot « euro » une première fois puis  récupérer le tag « monnaie » associé à ce mot. Enfin nous aurions récupéré tous les pays dont le tag « monnaie » contiendrait « euro ». Mais finalement, nous avons conclu que cela ne pourrait marcher que pour une petite base de données donc nous avons choisi de ne pas implémenter ce type de réponse. 
 
+\section{Compilation et éxecution du projet}
+Pour lancer le projet, il faut d'abord compiler l'outils dark :
+Dans le dossier ou se situe le makefile de dark, il faut lancer la commande make.
+Ensuite pour la création de la base de données, il faut lancer la commande suivante dans le dossier du projet :
+lua creationBdd.lua
+Enfin pour lancer le système de dialogue, il suffit de lancer la commande :
+./dark dialogue.lua
 
 \section{Conclusion}
 
