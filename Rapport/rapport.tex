@@ -86,15 +86,31 @@ L'information Position devait contenir une position GPS, ou tout autre élément
 
 
 \subsection{Les problèmes rencontrés}
-Pas de formatage des informations
-Création empirique des patterns
-Erreurs lié à dark (ex: nom propre parfois reconnu comme adjectif)
-Récupération des tags pour la base de donnée
+Au cours de ce projet, plusieurs problèmes ont été rencontré quant à l'extraction des informations.
+En effet, les informations contenus dans les différents textes ne sont pas formatés selon un schéma particulier.
+Ainsi, une même information (telle que la capitale d'un pays) pourra être donné de nombreuses façon différentes.
+Dès lors, il devient difficile de créer des règles de pattern capable de récupérer l'ensemble des informations contenues dans les textes.
 
-Initialement « façon xml » puis utilisation des fonctions fournies (+ variantes
-personnelles)
-Gestion de la ponctuation, majuscules/minuscules
-Choix de listes fermées/ouvertes ?
+Autre problème découlant du précédent : la création des règles de pattern a été réalise de manière plutôt "empirique".
+Après lecture de quelques pays, une règle générale est créé.
+Cependant, des versions "alternatives" de cette règles doivent être peu à peu créé pour couvrir plus d'informations.
+Ainsi, certaines règles pouvaient rapidement devenir complexes.
+
+Toujours dans la création des règles de pattern, nous avons rencontrés une contrainte lié directement à l'outil de travail : dark.
+En effet, si celui-ci reconnaissait généralement assez bien les types des mots, il arrivait dans certains cas qu'un mot soit reconnu comme appartenant à un autre type (par exemple un nom propre reconnu comme étant un adjectif), empêchant ainsi le bon fonctionnement des règles préalablement écrites et ne permettant pas la bonne récupération de l'information.
+
+La ponctuation a également posé problème dans sa gestion.
+Si au départ des espaces étaient insérés autour de chaque élément de ponctuation, il s'est rapidement avéré qu'un tel choix engendrait des difficultés supplémentaires pour la reconnaissance des mots composés (par exemple, "antigua-et-barbuda" devenait "antigua - et - barbuda" et n'était donc plus reconnu comme un pays).
+Il a été donc décidé de restreindre les éléments de ponctuations à séparer par des espaces.
+
+Par rapport à la génération de la base de donnée, il nous a été dans un premier temps difficile de récupérer les informations tagués dans les textes.
+Une première tentative lourde et approximative a été de considérer les textes traités comme étant des fichiers type XML.
+En utilisant une librairie lua existante, il était ainsi possible de récupérer le contenu des balises.
+Cette méthode n'était cependant pas optimale et a rapidement été remplacer par l'utilisation de fonction de récupération direct de tag fournies ainsi que de variantes créés lorsque le besoin se présentait.
+
+Enfin, la dernière difficulté rencontrée découle directement d'un mauvais choix de méthode de travail.
+En effet, nous avons eu tendance à plutôt nous concentrer sur une seule information à la fois et créer le plus de règle possible pour essayer de récupérer cette information dans tous les pays.
+Plutôt que de consacrer beaucoup de temps à la création de règles spécifiques qui ne vont récupérer l'information que dans 2 ou 3 pays supplémentaires, nous aurions du passer aux informations suivantes (quitte à y revenir une fois que toutes les informations était récupérées dans des proportions correctes).
 
 \subsection{La couverture d'information de la base}
 Nous avons réaliser un script permettant de calculer le rapport d'information présente dans la base de données par rapport au nombre total de pays.
