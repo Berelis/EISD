@@ -140,71 +140,95 @@ Par exemple, la liste des pays frontalier d'un pays X, on peut vérifier que cha
 
 \section{Système de dialogue}
 
-\subsection{Les questions}
+\subsection{Choix effectues}
 
-Nous avons choisi de parser la question et de nous arrêter à la lecture du point d’exclamation. Tout ce qui suit le ‘ ?’ n’est pas pris en compte. Cela nous permet d’éviter de devoir traiter plusieurs questions en même temps. Si l’utilisateur ne rentre pas de point d’exclamation la question n’est pas reconnue comme telle et nous n’y donnons donc pas suite.
- 
+\subsubsection{Les Tags} 
+
 Le but de la reconnaissance d’informations est de taguer les informations essentielles dans la question, à savoir le contexte et le sujet. Le contexte ici étant le pays, et le sujet étant les informations importantes le concernant. Ces informations sont les suivantes :
-Capitale
-Monnaie
-Continent
-Religion
-…
+\begin{itemize}
+	\item Capitale
+	\item Pays frontaliers
+	\item Monnaie
+	\item Continent
+	\item Religions
+	\item Population
+	\item Régime
+	\item Superficie
+\end{itemize}
 
+Nous avons donc taguer ces informations et nous les avons reliées à des mots à connotation proche pour identifier le sujet d'une question poser par l'utilisateur même s'il choisit de s'exprimer différemment. Par exemple, lorsqu'un utilisateur interroge le programme sur les religions d'un pays, il peut employer les termes "culte", "croyance", "dogme", "confession", "superstition", "foi" ou "religion".
 
-Nous avons choisi de stocker la réponse à ces informations de la sorte :
+\subsubsection{Stockage et recupération de données}
+
+Nous avons choisi de stocker la réponse aux informations dans la base de données de la sorte :
 France {
-            	monnaie = ‘’,
-            	capitale = ‘Paris’,
-            	religions = {},
-            	pays\_frontaliers = { Espagne, Allemagne, Suisse }
+	monnaie = ‘’,
+	capitale = ‘Paris’,
+	religions = {},
+	pays\_frontaliers = { Espagne, Allemagne, Suisse }
 }
-Soit un champ est vide, soit il contient une valeur, ou soit il contient un tableau de valeurs (qui peut être vide également).
- 
- 
-Récupérer le sujet/thème de la question (capitale, monnaie, pays voisins, religion,) et récupérer le contexte/pays sur lequel la question porte.
-« Quelle est la capitale de la France ? » 
- 
-Prendre en compte le fait qu’il puisse y avoir plusieurs sujets pour une question.
-« Quelles sont les capitales de l’Afrique du Sud et sa devise ? »
- 
-Prendre en compte le fait qu’il puisse y avoir plusieurs contextes pour une question.
-« Quelle est la capitale de la France et celles de l’Afrique du Sud ? »
- 
-Gérer l’historique pour un ou plusieurs contextes.
-« Quelle est la capitale de l’Espagne et de la France ? »
-« Et leur monnaie ? »
- 
-Gérer l’historique pour un ou plusieurs sujets.
-« Quelle est la devise de la Belgique et ses religions ? »
-« Et pour la France ? »
- 
-Ajout d’une table de jointure pour trouver si 2 pays ont des contextes en commun (ajout d’un tag sur les mots en commun). Renvoie tous les pays frontaliers en commun entre 2 pays :
-« Quels sont les pays voisins en commun entre la France et l’Autriche ? »
- 
-Renvoie tous les pays frontaliers en commun entre les 3 pays et renvoie ceux en commun entre 2 pays deux à deux avec un pourcentage d’intersection :
-« Quels sont les pays voisins en commun entre la France et l’Autriche et l’Espagne ? »
- 
- 
-Nous nous sommes ensuite intéressés au fait de répondre à des interrogations faites directement sur la base de données. Nous avons donc choisi de taguer le mot « base ». Et donc les questions suivantes renvoient toute une réponse pertinente.
- 
-Interrogation sur un ou plusieurs pays dans base renvoie de façon structurée toutes les informations le(s) concernant
-« Quelles sont les données en base que tu possèdes sur la France et l’Espagne ? »
- 
+Soit un champ est vide, soit il contient une valeur, ou soit il contient un tableau de valeurs (qui peut être vide également). 
+
+Ainsi, lors d'un parcours de la base, on utilise la méthode for k,v in ipairs, (k étant la clé et v la valeur) et on teste si ces valeurs sont nuls, si elles constituent une valeur unique, ou si ce sont des sous tableaux de valeurs. 
+
+\subsubsection{Parsage des données}
+
+\paragraph{}Nous avons décidé de ne pas prendre en compte les majuscules lors de la définition d'un nom de pays pour une question car si l'utilisateur ajoute plusieurs majuscule à un nom de pays ou à un élément clé sujet de la question comme "FranCE" ou "DEVise", on aurait eu à faire un traitement supplémentaire pour les identifier. Ainsi, les données sont stockées sans majuscule en base de données et au moment de la saisie d'une question, les données saisies sont immédiatement réduites en minuscule et on y enlève les éléments de ponctuation n'apparaissant pas comme pertinents à l'exception du point d'interrogation. 
+\paragraph{}Nous avons choisi de parser la question et de nous arrêter à la lecture du point d’exclamation. Tout ce qui suit le ‘ ?’ n’est pas pris en compte. Cela nous permet d’éviter de devoir traiter plusieurs questions en même temps. Si l’utilisateur ne rentre pas de point d’exclamation la question n’est pas reconnue comme telle et nous n’y donnons donc pas suite.
+
+\subsubsection{Afficher une réponse française correcte}
+
+\paragraph{}Une difficulté dans un tel projet est d'associer un article à un nom de pays, par exemple "La France" ou "Le Canada". Dans ces exemples il est difficile de concevoir une machine capable de détecter si le programme doit répondre au féminin, au masculin ou même au pluriel. De même en répondant "de la France" ou "du Canada". Pour remédier à ce problème nous avons choisi de répondre par "le pays nommé France" ou "du pays nommé Canada". Cela permet de lever l'ambiguïté tout en restant dans un français correct. 
+\paragraph{}Néanmoins, pour les sujets, un réel traitement est effectué. C'est-à-dire que nous testons conditionnellement le type de sujet (monnaie, continent, pays frontaliers) et le type de question (singulier, pluriel). En fonction du nombre de réponse on aura un affichage adapté. Soit, si on demande les religions en France, la réponse sera du type "les religions du pays nommé France sont <Liste des religions en France>". 
+\paragraph{}Aussi lorsque l'utilisateur interroge directement les données en base, le nombre de réponses est affiché et un choix lui est proposé quant à sa volonté d'afficher le résultat ou non. Cela lui permet d'éviter de surcharger la zone graphique si jamais le résultat est trop élevé ou si l'utilisateur a réalisé une erreur de frappe.
+
+\subsubsection{Historique des questions/réponses}
+Nous avons pensé à garder en mémoire dans une liste toutes les informations concernant la question posée précédemment par l'utilisateur, et la réponse fournie par le programme. Ainsi, nous avons testé si la question contient bien un sujet, un contexte, ou si elle portait sur une multitude d'éléments, ou alors sur la base directement. 
+\paragraph{}De ce fait, l'utilisateur peut poser une question avec un ou plusieurs sujet(s) concernant un ou plusieurs pays. Puis poser une question concernant un ou plusieurs sujets et celle-ci sera alors associée au(x) pays précédemment stocké. L'utilisateur peut même demander quels sont les pays frontaliers d'un pays et réutiliser la réponse comme un nouveau contexte à la question suivante.
+\paragraph{}D'autre part, les questions de l'utilisateur doivent rester cohérentes. En effet, si jamais il interroge la base sans aucun sujet ou avec un sujet et des contextes multiples, le programme ne sera pas en mesure de lui répondre.
+
+\subsubsection{Jointure de données}
+\paragraph{}Nous avons décidé d'implémenter un tag jointure comprenant les termes "commun", "similaire", "semblable", "identique", et "entre". Ce tag permet de renvoyer la réponse à des sujets que plusieurs pays possèdent en commun. Cela permet à l'utilisateur d'effectuer des comparaisons entre pays dans la base.
+
+\subsubsection{Fonctionnalités désirées}
+
+\paragraph{}Nous avons pensé à poser une question du type : «  Quels sont tous les pays dans la base de données qui possèdent l’euro ?». Pour répondre à cette question nous aurions pu parcourir la base jusqu'à atteindre le mot « euro » une première fois puis  récupérer le tag « monnaie » associé à ce mot. Enfin nous aurions récupéré tous les pays dont le tag « monnaie » contiendrait « euro ». Mais finalement, nous avons conclu que cela ne pourrait marcher que pour une petite base de données donc nous avons choisi de ne pas implémenter ce type de réponse. 
+\paragraph{}Nous aurions également aimé pouvoir implémenter une solution de traitement des mots à connotation proche pour pouvoir regrouper les langues, les religions et ne conserver que leur base. Par exemple, "islam" et "islamisme" sont tous les 2 en base de données mais ne concernent qu'une religion.
+
+\subsection{Les questions types}
+
+\textbf{Attention à toujours terminer une question par un point d'exclamation!}
+
+
+Récupérer le sujet/thème de la question (capitale, monnaie, pays voisins, religion,) et récupérer le contexte/pays sur lequel la question porte. \\
+\textit{« Quelle est la capitale de la France ? » }
+
+Prendre en compte le fait qu’il puisse y avoir plusieurs sujets pour une question. \\
+\textit{« Quelles sont les capitales de l’Afrique du Sud et sa devise ? »}
+
+Prendre en compte le fait qu’il puisse y avoir plusieurs contextes pour une question. \\
+\textit{« Quelle est la capitale de la France et celles de l’Afrique du Sud ? »}
+
+Gérer l’historique pour un ou plusieurs contextes. \\
+\textit{« Quelle est la capitale de l’Espagne et de la France ? »\\
+	« Et leur monnaie ? »}
+
+Gérer l’historique pour un ou plusieurs sujets. \\
+\textit{« Quelle est la devise de la Belgique et ses religions ? » \\
+	« Et pour la France ? »}
+
+Ajout d’une table de jointure pour trouver si 2 pays ont des contextes en commun (ajout d’un tag sur les mots en commun). Renvoie tous les pays frontaliers en commun entre 2 pays : \\
+\textit{« Quels sont les pays voisins en commun entre la France et l’Autriche ? »}
+
+Renvoie tous les pays frontaliers en commun entre les 3 pays et renvoie ceux en commun entre 2 pays deux à deux avec un pourcentage d’intersection : \\
+\textit{« Quels sont les pays voisins en commun entre la France et l’Autriche et l’Espagne ? »}
+
+Interrogation sur un ou plusieurs pays dans base renvoie de façon structurée toutes les informations le(s) concernant \\
+\textit{« Quelles sont les données en base que tu possèdes sur la France et l’Espagne ? »}
+
 Interrogation sur un ou plusieurs sujets dans la base de données renvoie toutes les informations, sans doublons, disponibles et présentes pour chaque pays.
-« Quelles sont les devises et les religions présentes en base ? »
- 
- 
- 
- 
-Corriger la synthaxe
- 
-France Espagne base
-France Espagne monnaie base => question classique
-Monnaie base => toutes les monnaies de la base  (donner d’abord le nombre de réponse, puis proposer à l’utilisateur de les afficher)
-Pays en afrique =>
- 
-Nous avons pensé à poser une question du type : «  Quels sont tous les pays dans la base de données qui possèdent l’euro ?». Pour répondre à cette question nous aurions pu parcourir la base jusqu’à atteindre le mot « euro » une première fois puis  récupérer le tag « monnaie » associé à ce mot. Enfin nous aurions récupéré tous les pays dont le tag « monnaie » contiendrait « euro ». Mais finalement, nous avons conclu que cela ne pourrait marcher que pour une petite base de données donc nous avons choisi de ne pas implémenter ce type de réponse. 
+\textit{« Quelles sont les devises et les religions présentes en base ? »}
+
 
 \section{Compilation et éxecution du projet}
 Pour lancer le projet, il faut d'abord compiler l'outils dark :
