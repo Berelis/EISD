@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+
+% Langue
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Mise en page
+\usepackage[scale=0.7]{geometry}
+% Pied de page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+% Interligne après les paragraphes
+\setlength{\parskip}{5pt}
+
+% Images
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+% Rond plutôt que des tirets dans les listes
+\renewcommand{\Frlabelitemi}{\textbullet}
+
+% Bibliographie
+\bibliographystyle{plain}
+\usepackage{url}% Used for printing URL
+
+\begin{document}
+
+\input{page_de_garde.tex}
+
+\rhead{EISD - Rapport}
+\lfoot{\includegraphics[scale=0.3]{polytech.jpg}}
+\rfoot{JAYEZ - MONNET \\ NABBS - PONCET}
+
+\section{Introduction}
+
+
+\section{Extraction d'information}
+
+\section{Système de dialogue}
+
+Nous avons choisi de parser la question et de nous arrêter à la lecture du point d’exclamation. Tout ce qui suit le ‘ ?’ n’est pas pris en compte. Cela nous permet d’éviter de devoir traiter plusieurs questions en même temps. Si l’utilisateur ne rentre pas de point d’exclamation la question n’est pas reconnue comme telle et nous n’y donnons donc pas suite.
+ 
+Le but de la reconnaissance d’informations est de taguer les informations essentielles dans la question, à savoir le contexte et le sujet. Le contexte ici étant le pays, et le sujet étant les informations importantes le concernant. Ces informations sont les suivantes :
+Capitale
+Monnaie
+Continent
+Religion
+…
+
+
+Nous avons choisi de stocker la réponse à ces informations de la sorte :
+France {
+            	monnaie = ‘’,
+            	capitale = ‘Paris’,
+            	religions = {},
+            	pays\_frontaliers = { Espagne, Allemagne, Suisse }
+}
+Soit un champ est vide, soit il contient une valeur, ou soit il contient un tableau de valeurs (qui peut être vide également).
+ 
+ 
+Récupérer le sujet/thème de la question (capitale, monnaie, pays voisins, religion,) et récupérer le contexte/pays sur lequel la question porte.
+« Quelle est la capitale de la France ? » 
+ 
+Prendre en compte le fait qu’il puisse y avoir plusieurs sujets pour une question.
+« Quelles sont les capitales de l’Afrique du Sud et sa devise ? »
+ 
+Prendre en compte le fait qu’il puisse y avoir plusieurs contextes pour une question.
+« Quelle est la capitale de la France et celles de l’Afrique du Sud ? »
+ 
+Gérer l’historique pour un ou plusieurs contextes.
+« Quelle est la capitale de l’Espagne et de la France ? »
+« Et leur monnaie ? »
+ 
+Gérer l’historique pour un ou plusieurs sujets.
+« Quelle est la devise de la Belgique et ses religions ? »
+« Et pour la France ? »
+ 
+Ajout d’une table de jointure pour trouver si 2 pays ont des contextes en commun (ajout d’un tag sur les mots en commun). Renvoie tous les pays frontaliers en commun entre 2 pays :
+« Quels sont les pays voisins en commun entre la France et l’Autriche ? »
+ 
+Renvoie tous les pays frontaliers en commun entre les 3 pays et renvoie ceux en commun entre 2 pays deux à deux avec un pourcentage d’intersection :
+« Quels sont les pays voisins en commun entre la France et l’Autriche et l’Espagne ? »
+ 
+ 
+Nous nous sommes ensuite intéressés au fait de répondre à des interrogations faites directement sur la base de données. Nous avons donc choisi de taguer le mot « base ». Et donc les questions suivantes renvoient toute une réponse pertinente.
+ 
+Interrogation sur un ou plusieurs pays dans base renvoie de façon structurée toutes les informations le(s) concernant
+« Quelles sont les données en base que tu possèdes sur la France et l’Espagne ? »
+ 
+Interrogation sur un ou plusieurs sujets dans la base de données renvoie toutes les informations, sans doublons, disponibles et présentes pour chaque pays.
+« Quelles sont les devises et les religions présentes en base ? »
+ 
+ 
+ 
+ 
+Corriger la synthaxe
+ 
+France Espagne base
+France Espagne monnaie base => question classique
+Monnaie base => toutes les monnaies de la base  (donner d’abord le nombre de réponse, puis proposer à l’utilisateur de les afficher)
+Pays en afrique =>
+ 
+Nous avons pensé à poser une question du type : «  Quels sont tous les pays dans la base de données qui possèdent l’euro ?». Pour répondre à cette question nous aurions pu parcourir la base jusqu’à atteindre le mot « euro » une première fois puis  récupérer le tag « monnaie » associé à ce mot. Enfin nous aurions récupéré tous les pays dont le tag « monnaie » contiendrait « euro ». Mais finalement, nous avons conclu que cela ne pourrait marcher que pour une petite base de données donc nous avons choisi de ne pas implémenter ce type de réponse. 
+
+
+
+
+\end{document}
