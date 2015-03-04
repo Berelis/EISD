@@ -8,7 +8,9 @@ end
 dofile("../bdd.lua")
 
 --Appel des fichiers extérieurs
-require('position')
+require('frontalier')
+require('capitale')
+require('continent')
 require('langue')
 require('monnaie')
 require('religion')
@@ -22,16 +24,17 @@ require('regime')
 local name = dark.pipeline()
 --chargement de la liste des pays
 name:lexicon("&pays", "pays.txt")
---name:lexicon("&pays", "pays2.txt")
 
 local main = dark.pipeline()
 --détéction des mots de la langue française
 main:model("model/postag-fr")
 
 --ajout des pattern créés précédemments
+main:add(continent)
 main:add(nombre)
 main:add(name)
-main:add(position)
+main:add(frontalier)
+main:add(capitale)
 main:add(langue)
 main:add(monnaie)
 main:add(religion)
