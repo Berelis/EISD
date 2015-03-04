@@ -7,7 +7,7 @@ nombre:pattern(
 
 nombre:pattern(
 [[
-	 [&NUM /[0-9]+$/]
+	 [&NUM (/%d$/ | /%d%d$/ | /%d%d%d$/) ]
 ]])
 
 nombre:pattern(
@@ -15,24 +15,24 @@ nombre:pattern(
 	[&nombre (/un$/ | 
 			  /deux$/ | 
 			  /trois$/ | 
-			  /quatre$/ | 
+			  /quatre/ | 
 			  /cinq$/ | 
 			  /six$/ | 
 			  /sept$/ | 
 			  /huit$/ | 
 			  /neuf$/ | 
-			  /dix$/ | 
+			  /dix/ | 
 			  /onze$/ | 
 			  /douze$/ | 
 			  /treize$/ | 
 			  /quatorze$/ |
 			  /quinze$/ |
 			  /seize$/ |
-			  /vingt$/ |
-			  /trente$/ |
-			  /quarante$/ |
-			  /cinquante$/ |
-			  /soixante$/
+			  /vingt/ |
+			  /trente/ |
+			  /quarante/ |
+			  /cinquante/ |
+			  /soixante/
 
 				)]
 ]])
@@ -44,6 +44,7 @@ nombre:pattern(
 
 nombre:pattern(
 [[
-	[&nombre_complet ( &NUM /,/ &NUM | &NUM | &nombre)+  &puissanceDix?]
+	[&nombre_complet ( &NUM /,/ &NUM  | &NUM | &nombre)+  &puissanceDix?]
 ]])
 
+-- &NUM /,/ &NUM

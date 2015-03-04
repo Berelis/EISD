@@ -6,7 +6,6 @@ local tabInfo = {
 	capitale = 0,
 	monnaie = 0,
 	religion =0,
-	position = 0,
 	pays_frontalier = 0,
 	population = 0,
 	regime = 0,
@@ -19,9 +18,12 @@ for nomPays,pays in pairs(bdd) do
 	for k,v in pairs(pays) do
 		if v ~= nil and v ~= "" and #v ~= 0 then
 			tabInfo[k] = tabInfo[k] + 1
+			if k == 'regime' then
+				print(nomPays)
+			end
 		else
 			if k == 'continent' then
-				print(nomPays)
+				--print(nomPays)
 			end
 		end
 	end

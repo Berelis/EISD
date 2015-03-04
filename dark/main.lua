@@ -64,7 +64,9 @@ local tag = {
 	nombre_complet = "yellow",
 	est_regime = "green",
 	regime_complet = "white",
-	ADP = "black",
+	--ADP = "black",
+	--DET = "cyan",
+	regime = "cyan"
 
 }
 
@@ -145,7 +147,6 @@ modele  = {
 	capitale = {},
 	monnaie = "",
 	religion ={},
-	position = {},
 	pays_frontalier = {},
 	population = "",
 	regime = "",
@@ -157,7 +158,7 @@ local nomPays = nil
 
 for line in io.lines() do
 	--local seq = main(line:gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
-	local seq = main(line:lower():gsub("[/.\",;]", " %1 "):gsub("[']", "%1 "))
+	local seq = main(line:lower():gsub("[/.\",;()]", " %1 "):gsub("[']", "%1 "))
 
 	if nomPays == nil then
 		nomPays = get_tags(seq, "&pays")[1]
@@ -250,9 +251,11 @@ for line in io.lines() do
 		end
 
 		--Extraction régime
-		tmp = get_tags(seq, "&regime_complet")
-		if tmp[1] ~= nil then
-			bdd[nomPays].regime = tmp[1]
+		if bdd[nomPays].regime == "" then
+			tmp = get_tags(seq, "&regime")
+			if tmp[1] ~= nil then
+				bdd[nomPays].regime = tmp[1]
+			end
 		end
 
 	end
