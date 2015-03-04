@@ -42,8 +42,8 @@
 \section{Introduction}
 %Schema du systéme ?
 
-Le but du projet est de créer un système permettant de créer un dialogue question-réponse avec un utilisateur. Le système répond en puisant les informations dans une base de données. Cette base à été préalablement remplis grâce à des informations extraites depuis différent éléments comme des texte, tableaux et ceci depuis toute les sources disponibles. 
-La circulation des données est illustrée par la figure \ref{fig:schema} juste en dessous.
+Le but du projet est de créer un système permettant d'engager un dialogue question-réponse avec un utilisateur. Le système répond en puisant les informations dans une base de données. Cette base à été préalablement remplis grâce à des informations extraites depuis différents éléments comme des texte, tableaux et ceci provenant de toute sources disponibles. 
+La circulation des données est illustrée par la figure \ref{fig:schema} en dessous.
 
 \begin{figure}[!htb]
 	\includegraphics[width=\textwidth]{schemaSysteme.png}
@@ -51,12 +51,14 @@ La circulation des données est illustrée par la figure \ref{fig:schema} juste 
 	\label{fig:schema}
 \end{figure}
 
-Des systèmes équivalent de grandes ampleur sont déjà utilisés tous les jours. Pour ce projet, il est demandé de réaliser un version minimaliste avec des informations concentrés sur un seul sujet.
+Des systèmes équivalent de grandes ampleurs sont déjà utilisés tous les jours. Pour ce projet, il est demandé de réaliser un version minimaliste avec des informations concentrés sur un seul sujet.
 
 Il existe plusieurs manière de récupérer et remplir une base de données, les principales sont de récupérer directement les informations depuis un tableau, c'est la manière la plus rapide, la plus simple, et on obtient une grande masse de données. Ensuite extraire l'information depuis des textes, pour cela il faut établir des listes de règles et des expression régulière pour récupérer l'information. Cette méthode est donc plus compliqué à mettre en place, mais cela permets toujours d'automatiser la récupération de l'information. Ensuite quand les informations sont ne sont pas récupérable par les méthodes précédente, il est plus rentable d'ajouter manuellement une information dans la base de données que de créer une règle spécifique.
 Dans le projet on utilise la méthode d'extraction d'information dans les textes pour remplir de la base. Cela nous permets d'être confronté aux problèmes que pose la rédaction des règles.
 
 Deux sujets était proposés, le premier, des descriptions provenant du site Wikipédia d'un grand nombre de pays. Le second, des recettes et commentaires issues du site Marmiton. Nous avons choisis les descriptions des pays pour la propreté de rédaction des textes.
+
+Le projet est réaliser en langage lua, langage de script léger et performant. On utilise un programme nommé dark qui est un outils de développement pour la création des règles. Celle-ci s'utilise de la même manière que des expressions régulières. L'outil permet également l'application de tag dans les textes et une sérialisation de tableau pour remplir la base de données faite en lua. 
 
 
 \clearpage
@@ -80,6 +82,7 @@ Choix initial des informations à récupérer :
 	\item Position (GPS, etc.)
 \end{itemize}
 
+L'information Position devait contenir une position GPS, ou tout autre élément permettant de situer le pays. Or la position GPS n'est pas présente dans les différents textes et la position est déjà donnée grâce aux informations Continent et Pays Frontaliers. Donc nous avons retirer l'information Position de notre base de données.
 
 
 \subsection{Les problèmes rencontrés}
@@ -96,11 +99,28 @@ Choix de listes fermées/ouvertes ?
 \subsection{La couverture d'information de la base}
 Nous avons réaliser un script permettant de calculer le rapport d'information présente dans la base de données par rapport au nombre total de pays.
 
-Voici les résultats après avoir effectué les dernières modifications sur nos règles :
+Voici les résultats (arrondi au \%) après avoir effectué les dernières modifications sur nos règles :
 % bla bla completage
+\begin{itemize}
+	\item Langue 		  : 22\%
+	\item Continent 	  : 84\%
+	\item Capitale 		  : 38\%
+	\item Pays Frontalier : 43\%
+	\item Superficie	  : 21\%
+	\item Population 	  : 38\%
+	\item Régime 		  : 9\%
+	\item Religion		  : 12\%
+	\item Monnaie		  : 22\%
+\end{itemize}
+
+  
+
 
 \subsection{Améliorations possibles}
-Vérifications de la qualité
+Vérifications de la qualité des informations dans la base de données :
+Par exemple, la liste des pays frontalier d'un pays X, on peut vérifier que chaque pays contenu dans la liste, a bien le pays X comme pays frontalier.
+
+\clearpage
 
 \section{Système de dialogue}
 
