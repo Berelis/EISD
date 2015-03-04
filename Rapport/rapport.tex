@@ -176,7 +176,7 @@ Ainsi, lors d'un parcours de la base, on utilise la méthode for k,v in ipairs, 
 \paragraph{}Nous avons décidé de ne pas prendre en compte les majuscules lors de la définition d'un nom de pays pour une question car si l'utilisateur ajoute plusieurs majuscule à un nom de pays ou à un élément clé sujet de la question comme "FranCE" ou "DEVise", on aurait eu à faire un traitement supplémentaire pour les identifier. Ainsi, les données sont stockées sans majuscule en base de données et au moment de la saisie d'une question, les données saisies sont immédiatement réduites en minuscule et on y enlève les éléments de ponctuation n'apparaissant pas comme pertinents à l'exception du point d'interrogation. 
 \paragraph{}Nous avons choisi de parser la question et de nous arrêter à la lecture du point d’exclamation. Tout ce qui suit le ‘ ?’ n’est pas pris en compte. Cela nous permet d’éviter de devoir traiter plusieurs questions en même temps. Si l’utilisateur ne rentre pas de point d’exclamation la question n’est pas reconnue comme telle et nous n’y donnons donc pas suite.
 
-\subsubsection{Afficher une réponse française correcte}
+\subsubsection{Affichage syntaxique dans un français correct}
 
 \paragraph{}Une difficulté dans un tel projet est d'associer un article à un nom de pays, par exemple "La France" ou "Le Canada". Dans ces exemples il est difficile de concevoir une machine capable de détecter si le programme doit répondre au féminin, au masculin ou même au pluriel. De même en répondant "de la France" ou "du Canada". Pour remédier à ce problème nous avons choisi de répondre par "le pays nommé France" ou "du pays nommé Canada". Cela permet de lever l'ambiguïté tout en restant dans un français correct. 
 \paragraph{}Néanmoins, pour les sujets, un réel traitement est effectué. C'est-à-dire que nous testons conditionnellement le type de sujet (monnaie, continent, pays frontaliers) et le type de question (singulier, pluriel). En fonction du nombre de réponse on aura un affichage adapté. Soit, si on demande les religions en France, la réponse sera du type "les religions du pays nommé France sont <Liste des religions en France>". 
@@ -190,7 +190,7 @@ Nous avons pensé à garder en mémoire dans une liste toutes les informations c
 \subsubsection{Jointure de données}
 \paragraph{}Nous avons décidé d'implémenter un tag jointure comprenant les termes "commun", "similaire", "semblable", "identique", et "entre". Ce tag permet de renvoyer la réponse à des sujets que plusieurs pays possèdent en commun. Cela permet à l'utilisateur d'effectuer des comparaisons entre pays dans la base.
 
-\subsubsection{Fonctionnalités désirées}
+\subsection{Fonctionnalités désirées}
 
 \paragraph{}Nous avons pensé à poser une question du type : «  Quels sont tous les pays dans la base de données qui possèdent l’euro ?». Pour répondre à cette question nous aurions pu parcourir la base jusqu'à atteindre le mot « euro » une première fois puis  récupérer le tag « monnaie » associé à ce mot. Enfin nous aurions récupéré tous les pays dont le tag « monnaie » contiendrait « euro ». Mais finalement, nous avons conclu que cela ne pourrait marcher que pour une petite base de données donc nous avons choisi de ne pas implémenter ce type de réponse. 
 \paragraph{}Nous aurions également aimé pouvoir implémenter une solution de traitement des mots à connotation proche pour pouvoir regrouper les langues, les religions et ne conserver que leur base. Par exemple, "islam" et "islamisme" sont tous les 2 en base de données mais ne concernent qu'une religion.
