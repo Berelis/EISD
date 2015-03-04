@@ -5,7 +5,7 @@ if io.open("bdd.lua","r") == nil then
 	f:close()
 end
 
-dofile("../bdd.lua")
+dofile("bdd.lua")
 
 --Appel des fichiers extérieurs
 require('frontalier')
@@ -269,7 +269,7 @@ end
 --print("affichage bdd")
 --print(serialize(bdd))
 
-f = io.open("../bdd.lua","w"):write("bdd = " .. serialize(bdd))
+f = io.open("bdd.lua","w"):write("bdd = " .. serialize(bdd))
 f:flush()
 f.close()
 
